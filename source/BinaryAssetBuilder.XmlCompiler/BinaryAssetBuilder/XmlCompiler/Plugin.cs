@@ -210,6 +210,8 @@ public class Plugin : IAssetBuilderPlugin
             0xEC4577C9u,
 #endif
             false),
+
+            (typeof(StanceTemplate), 0x5C6E0E41u, false),
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
