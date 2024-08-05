@@ -195,6 +195,14 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
 
+            (typeof(ExperienceLevelTemplate),
+#if TIBERIUMWARS
+            0xAE55047Bu,
+#elif KANESWRATH
+            0xBD7DD70Eu,
+#endif
+            false),
+
             (typeof(DamageFX),
 #if TIBERIUMWARS
             0x4DF81EBDu,
