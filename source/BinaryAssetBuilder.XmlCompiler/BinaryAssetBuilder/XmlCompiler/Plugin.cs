@@ -180,6 +180,14 @@ public class Plugin : IAssetBuilderPlugin
             0xCBB109A0u,
 #endif
             false),
+
+            (typeof(DamageFX),
+#if TIBERIUMWARS
+            0x4DF81EBDu,
+#elif KANESWRATH
+            0xEC4577C9u,
+#endif
+            false),
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
