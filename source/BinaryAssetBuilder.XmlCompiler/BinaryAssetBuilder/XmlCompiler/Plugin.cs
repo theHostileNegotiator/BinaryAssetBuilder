@@ -126,6 +126,13 @@ public class Plugin : IAssetBuilderPlugin
             false),
 
 
+            (typeof(Weather),
+#if TIBERIUMWARS
+            0x368A8BA2u,
+#elif KANESWRATH
+            0x77FDF1C6u,
+#endif
+            false),
 
 
             (typeof(AttributeModifier),
