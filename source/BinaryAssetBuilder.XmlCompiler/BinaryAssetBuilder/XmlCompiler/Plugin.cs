@@ -171,6 +171,13 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
 
+            (typeof(RadiusCursorLibrary),
+#if TIBERIUMWARS
+            0xD62B490Fu,
+#elif KANESWRATH
+            0xF133BF97u,
+#endif
+            false),
 
             (typeof(SpecialPowerTemplate),
 #if TIBERIUMWARS
