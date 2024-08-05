@@ -140,6 +140,13 @@ public class Plugin : IAssetBuilderPlugin
             0x8C53C309u,
 #endif
             false),
+            (typeof(ObjectCreationList),
+#if TIBERIUMWARS
+            0x683D4DE5u,
+#elif KANESWRATH
+            0x8B85F295u,
+#endif
+            false),
 
 
             (typeof(AttributeModifier),

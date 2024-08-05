@@ -22,7 +22,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] ArmyDefinition                                            0x57213EA5
 * [ ] AIPersonalityDefinition                                   0x7DCE182F
 * [x] FXList
-* [ ] ObjectCreationList                                        0x683D4DE5
+* [x] ObjectCreationList                                        0x683D4DE5
 * [ ] ObjectFilterAsset                                         0x25970AF7
 * [x] SpecialPowerTemplate
 * [x] UpgradeTemplate
