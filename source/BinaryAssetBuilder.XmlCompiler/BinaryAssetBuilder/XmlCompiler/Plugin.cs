@@ -142,6 +142,10 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+
+
+            (typeof(LogicCommandSet), 0x6D148BD7u, false),
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);

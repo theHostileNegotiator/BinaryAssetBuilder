@@ -1,12 +1,11 @@
 ﻿using Relo;
 using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential, Size = 12)]
+public struct LogicCommandSet
 {
-    [StructLayout(LayoutKind.Sequential, Size = 12)]
-    public struct LogicCommandSet
-    {
-        public BaseInheritableAsset Base;
-        public List<AssetReference<LogicCommand>> Cmd;
-    }
+    public BaseInheritableAsset Base;
+    public List<AssetReference<LogicCommand>> Cmd;
 }
