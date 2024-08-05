@@ -142,6 +142,15 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+
+            (typeof(RadiusCursorLibrary),
+#if TIBERIUMWARS
+            0xD62B490Fu,
+#elif KANESWRATH
+            0xF133BF97u,
+#endif
+            false),
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);

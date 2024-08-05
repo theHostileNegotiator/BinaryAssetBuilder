@@ -37,7 +37,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] MissionTemplate                                           0x0D283295
 * [ ] TheaterOfWarTemplate                                      0xE60C9724
 * [ ] CampaignTemplate                                          0xAC60B530
-* [ ] RadiusCursorLibrary                                       0xD62B490F
+* [x] RadiusCursorLibrary
 * [ ] AudioFile                                                 0x46410F77
 * [ ] AudioEvent                                                0x1B886049
 * [ ] MusicTrack                                                0x1469548A
