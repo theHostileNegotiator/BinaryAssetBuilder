@@ -86,9 +86,9 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] TargetingCombatChainCompare                               0x553808EF
 * [ ] TargetingInTurretArcCompare                               0xCD24391A
 * [ ] Road                                                      0xDCF3C28B
-* [ ] Environment                                               0x878C42E0
+* [ ] Environment    
 * [x] LogicCommand
-* [ ] LogicCommandSet                                           0x6D148BD7
+* [x] LogicCommandSet
 * [ ] MiscAudio                                                 0xFA4817E2
 * [ ] AudioSettings                                             0x89AA7DDE
 * [ ] CrowdResponse                                             0x66FB33A0
