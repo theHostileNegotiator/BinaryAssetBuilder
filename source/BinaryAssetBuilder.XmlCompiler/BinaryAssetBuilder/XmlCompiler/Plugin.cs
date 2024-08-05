@@ -144,7 +144,13 @@ public class Plugin : IAssetBuilderPlugin
             false),
 
 
-
+            (typeof(SpecialPowerTemplate),
+#if TIBERIUMWARS
+            0x5EF0ACA9u,
+#elif KANESWRATH
+            0xC4DCAF5Au,
+#endif
+            false),
             (typeof(UpgradeTemplate),
 #if TIBERIUMWARS
             0x1E53F384u,
@@ -152,6 +158,7 @@ public class Plugin : IAssetBuilderPlugin
             0x163BC89Du,
 #endif
             false),
+
             (typeof(StringHashTable),
 #if TIBERIUMWARS
             0x2C112832u,
