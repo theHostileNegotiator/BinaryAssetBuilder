@@ -259,6 +259,35 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
 
+            (typeof(GameLODPreset),
+#if TIBERIUMWARS
+            0x19DAC24Du,
+#elif KANESWRATH
+            0xD09C0652u,
+#endif
+            false),
+            (typeof(StaticGameLOD),
+#if TIBERIUMWARS
+            0xBEAF1CC9u,
+#elif KANESWRATH
+            0x352AA045u,
+#endif
+            false),
+            (typeof(DynamicGameLOD),
+#if TIBERIUMWARS
+            0x71BAD792u,
+#elif KANESWRATH
+            0xA2EDC094u,
+#endif
+            false),
+            (typeof(AudioLOD),
+#if TIBERIUMWARS
+            0x3ABBF00Fu,
+#elif KANESWRATH
+            0x8F6AD19Du,
+#endif
+            false),
+
             (typeof(StanceTemplate), 0x5C6E0E41u, false),
 
 
@@ -270,7 +299,6 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
             (typeof(LogicCommandSet), 0x6D148BD7u, false),
-
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);

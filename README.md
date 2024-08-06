@@ -69,10 +69,10 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] MultiplayerSettings                                       0x1BAF4C42
 * [ ] OnlineChatColors                                          0xF3645AA7
 * [ ] MultiplayerColor                                          0x966F336A
-* [ ] GameLODPreset                                             0x19DAC24D
-* [ ] StaticGameLOD                                             0xBEAF1CC9
-* [ ] DynamicGameLOD                                            0x71BAD792
-* [ ] AudioLOD                                                  0x3ABBF00F
+* [x] GameLODPreset
+* [x] StaticGameLOD
+* [x] DynamicGameLOD
+* [x] AudioLOD
 * [ ] VideoEventList                                            0x999FCBE3
 * [ ] UIConfigList                                              0xB3B7607A
 * [ ] PackedTextureImage                                        0x2FAEB748
