@@ -142,6 +142,35 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+            (typeof(GameLODPreset),
+#if TIBERIUMWARS
+            0x19DAC24Du,
+#elif KANESWRATH
+            0xD09C0652u,
+#endif
+            false),
+            (typeof(StaticGameLOD),
+#if TIBERIUMWARS
+            0xBEAF1CC9u,
+#elif KANESWRATH
+            0x352AA045u,
+#endif
+            false),
+            (typeof(DynamicGameLOD),
+#if TIBERIUMWARS
+            0x71BAD792u,
+#elif KANESWRATH
+            0xA2EDC094u,
+#endif
+            false),
+            (typeof(AudioLOD),
+#if TIBERIUMWARS
+            0x3ABBF00Fu,
+#elif KANESWRATH
+            0x8F6AD19Du,
+#endif
+            false),
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
