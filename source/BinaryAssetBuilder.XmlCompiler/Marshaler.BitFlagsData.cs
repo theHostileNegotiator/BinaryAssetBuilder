@@ -1445,6 +1445,15 @@ public static partial class Marshaler
         Marshal(value.GetText(), objT, state);
     }
 
+    public static unsafe void Marshal(Node node, KindOfBitFlags* objT, Tracker state)
+    {
+        if (node is null)
+        {
+            return;
+        }
+        Marshal(node.GetValue(), objT, state);
+    }
+
     public static unsafe void Marshal(string text, LocomotorSurfaceBitFlags* objT, Tracker state)
     {
         string[] tokens = text.Split(WhiteSpaces, System.StringSplitOptions.RemoveEmptyEntries);

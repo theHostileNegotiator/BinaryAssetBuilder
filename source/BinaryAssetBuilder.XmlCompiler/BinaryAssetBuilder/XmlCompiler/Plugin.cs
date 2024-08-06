@@ -139,7 +139,20 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
 
-
+            (typeof(ArmyDefinition),
+#if TIBERIUMWARS
+            0x57213EA5u,
+#elif KANESWRATH
+            0x3C1B9C81u,
+#endif
+            false),
+            (typeof(AIPersonalityDefinition),
+#if TIBERIUMWARS
+            0x7DCE182Fu,
+#elif KANESWRATH
+            0xC360B65Bu,
+#endif
+            false),
             (typeof(FXList),
 #if TIBERIUMWARS
             0xEBE8A8A4u,
@@ -154,7 +167,6 @@ public class Plugin : IAssetBuilderPlugin
             0x8B85F295u,
 #endif
             false),
-
 
             (typeof(AttributeModifier),
 #if TIBERIUMWARS
@@ -191,6 +203,35 @@ public class Plugin : IAssetBuilderPlugin
             0x1E53F384u,
 #elif KANESWRATH
             0x163BC89Du,
+#endif
+            false),
+            (typeof(SkirmishOpeningMove),
+#if TIBERIUMWARS
+            0x21EE29FAu,
+#elif KANESWRATH
+            0x8A31273Fu,
+#endif
+            false),
+
+            (typeof(AIStrategicStateDefinition),
+#if TIBERIUMWARS
+            0x1E27DA26u,
+#elif KANESWRATH
+            0xBB05CCECu,
+#endif
+            false),
+            (typeof(AIBudgetStateDefinition),
+#if TIBERIUMWARS
+            0xA10F9630u,
+#elif KANESWRATH
+            0xE565E521u,
+#endif
+            false),
+            (typeof(AITargetingHeuristic),
+#if TIBERIUMWARS
+            0xB7A2C222u,
+#elif KANESWRATH
+            0x609F30D5u,
 #endif
             false),
 

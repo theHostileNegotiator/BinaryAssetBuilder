@@ -19,18 +19,18 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] W3DHierarchy                                              0x3BC26A7A
 * [ ] W3DAnimation                                              0xCC069193
 * [ ] W3DCollisionBox                                           0xC917E725
-* [ ] ArmyDefinition                                            0x57213EA5
-* [ ] AIPersonalityDefinition                                   0x7DCE182F
+* [x] ArmyDefinition
+* [x] AIPersonalityDefinition
 * [x] FXList
 * [x] ObjectCreationList
 * [ ] ObjectFilterAsset                                         0x25970AF7
 * [x] SpecialPowerTemplate
 * [x] UpgradeTemplate
-* [ ] SkirmishOpeningMove                                       0x21EE29FA
+* [x] SkirmishOpeningMove
 * [ ] AIStateDefinition                                         0x262BE85F
-* [ ] AIStrategicStateDefinition                                0x1E27DA26
-* [ ] AIBudgetStateDefinition                                   0xA10F9630
-* [ ] AITargetingHeuristic                                      0xB7A2C222
+* [x] AIStrategicStateDefinition
+* [x] AIBudgetStateDefinition
+* [x] AITargetingHeuristic
 * [ ] GameMap                                                   0x3EC9C79B
 * [x] AttributeModifier
 * [x] ArmorTemplate
