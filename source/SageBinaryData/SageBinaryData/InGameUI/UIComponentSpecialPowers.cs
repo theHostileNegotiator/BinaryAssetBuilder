@@ -1,13 +1,12 @@
 ﻿using System.Runtime.InteropServices;
 using AnsiString = Relo.String<sbyte>;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct UIComponentSpecialPowers
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct UIComponentSpecialPowers
-    {
-        public UIBaseComponent Base;
-        public TypedAssetId<PackedTextureImage> PowerTimerImage;
-        public AnsiString PowerTimerFlashImageName;
-    }
+    public UIBaseComponent Base;
+    public TypedAssetId<PackedTextureImage> PowerTimerImage;
+    public AnsiString PowerTimerFlashImageName;
 }

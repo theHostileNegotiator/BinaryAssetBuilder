@@ -1,9 +1,11 @@
-﻿using System.Runtime.InteropServices;
+﻿#if KANESWRATH
+using System.Runtime.InteropServices;
 
 namespace SageBinaryData;
 
 [StructLayout(LayoutKind.Sequential)]
-public struct UIComponentInputBridge
+public struct UIComponentRadialToolTip
 {
     public UIBaseComponent Base;
 }
+#endif

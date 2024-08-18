@@ -1,13 +1,12 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct InGameUIFloatingTextSettings
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct InGameUIFloatingTextSettings
-    {
-        public Time TimeOut;
-        public Velocity MoveUpSpeed;
-        public Velocity MoveVanishRate;
-        public FontDesc Font;
-    }
+    public Time TimeOut;
+    public Velocity MoveUpSpeed;
+    public Velocity MoveVanishRate;
+    public FontDesc Font;
 }

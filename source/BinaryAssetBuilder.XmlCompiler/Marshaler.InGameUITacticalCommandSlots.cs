@@ -3,6 +3,28 @@ using SageBinaryData;
 
 public static partial class Marshaler
 {
+    public static unsafe void Marshal(Node node, InGameUIGroupSelectionGroupCommandSlots* objT, Tracker state)
+    {
+        if (node is null)
+        {
+            return;
+        }
+        Marshal(node.GetAttributeValue(nameof(InGameUIGroupSelectionGroupCommandSlots.Create), null), &objT->Create, state);
+        Marshal(node.GetAttributeValue(nameof(InGameUIGroupSelectionGroupCommandSlots.AddTo), null), &objT->AddTo, state);
+        Marshal(node.GetAttributeValue(nameof(InGameUIGroupSelectionGroupCommandSlots.Select), null), &objT->Select, state);
+        Marshal(node.GetAttributeValue(nameof(InGameUIGroupSelectionGroupCommandSlots.View), null), &objT->View, state);
+    }
+
+    public static unsafe void Marshal(Node node, InGameUIViewBookmarkCommandSlots* objT, Tracker state)
+    {
+        if (node is null)
+        {
+            return;
+        }
+        Marshal(node.GetAttributeValue(nameof(InGameUIViewBookmarkCommandSlots.GoTo), null), &objT->GoTo, state);
+        Marshal(node.GetAttributeValue(nameof(InGameUIViewBookmarkCommandSlots.Save), null), &objT->Save, state);
+    }
+
     public static unsafe void Marshal(Node node, InGameUIGroupSelectionCommandSlots* objT, Tracker state)
     {
         if (node is null)
@@ -84,6 +106,16 @@ public static partial class Marshaler
         Marshal(node, (BaseAssetType*)objT, state);
     }
 
+    public static unsafe void Marshal(Node node, InGameUISideBarBuildQueuePageSlot* objT, Tracker state)
+    {
+        if (node is null)
+        {
+            return;
+        }
+        Marshal(node.GetAttributeValue(nameof(InGameUISideBarBuildQueuePageSlot.QueueType), null), &objT->QueueType, state);
+        Marshal(node.GetAttributeValue(nameof(InGameUISideBarBuildQueuePageSlot.Slot), null), &objT->Slot, state);
+    }
+
     public static unsafe void Marshal(Node node, InGameUISideBarCommandSlots* objT, Tracker state)
     {
         if (node is null)
@@ -115,4 +147,37 @@ public static partial class Marshaler
         Marshal(node.GetChildNodes(nameof(InGameUIUnitAbilityCommandSlots.Slot)), &objT->Slot, state);
         Marshal(node, (BaseAssetType*)objT, state);
     }
+
+#if KANESWRATH
+    public static unsafe void Marshal(Node node, MetaGameUITacticalCommandSlots* objT, Tracker state)
+    {
+        if (node is null)
+        {
+            return;
+        }
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGOpenObjectivesDialog), null), &objT->MGOpenObjectivesDialog, state);
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGOpenIntelligenceDialog), null), &objT->MGOpenIntelligenceDialog, state);
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGEndTurn), null), &objT->MGEndTurn, state);
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGResupply), null), &objT->MGResupply, state);
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGClearOrders), null), &objT->MGClearOrders, state);
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGSell), null), &objT->MGSell, state);
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGNextBase), null), &objT->MGNextBase, state);
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGPrevBase), null), &objT->MGPrevBase, state);
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGNextStrikeForce), null), &objT->MGNextStrikeForce, state);
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGPrevStrikeForce), null), &objT->MGPrevStrikeForce, state);
+        Marshal(node.GetAttributeValue(nameof(MetaGameUITacticalCommandSlots.MGNextBattle), null), &objT->MGNextBattle, state);
+        Marshal(node, (BaseAssetType*)objT, state);
+    }
+
+    public static unsafe void Marshal(Node node, MetaGameUICommonOpCommandSlots* objT, Tracker state)
+    {
+        if (node is null)
+        {
+            return;
+        }
+        Marshal(node.GetChildNodes(nameof(MetaGameUICommonOpCommandSlots.Slot)), &objT->Slot, state);
+        Marshal(node, (BaseAssetType*)objT, state);
+    }
+#endif
+
 }

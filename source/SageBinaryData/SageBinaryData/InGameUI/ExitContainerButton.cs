@@ -1,12 +1,11 @@
 ﻿using System.Runtime.InteropServices;
 using AnsiString = Relo.String<sbyte>;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct InGameUIExitContainerButtonSettings
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct InGameUIExitContainerButtonSettings
-    {
-        public AnsiString HelpTitleFormat;
-        public AnsiString HelpDescription;
-    }
+    public AnsiString HelpTitleFormat;
+    public AnsiString HelpDescription;
 }

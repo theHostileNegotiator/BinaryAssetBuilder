@@ -9,6 +9,8 @@ public static partial class Marshaler
         {
             return;
         }
+        Marshal(node.GetAttributeValue(nameof(UIComponentAptJoypad.RelayLeftStickPosition), "false"), &objT->RelayLeftStickPosition, state);
+        Marshal(node.GetAttributeValue(nameof(UIComponentAptJoypad.RelayRightStickPosition), "false"), &objT->RelayRightStickPosition, state);
         Marshal(node, (UIBaseComponent*)objT, state);
     }
 }

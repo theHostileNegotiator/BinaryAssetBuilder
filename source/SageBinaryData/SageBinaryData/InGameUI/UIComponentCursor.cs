@@ -1,12 +1,11 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct UIComponentCursor
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct UIComponentCursor
-    {
-        public UIBaseComponent Base;
-        public StringHash AptEventCursorChanged;
-        public InGameUIDecalCloudSettings DecalCloud;
-    }
+    public UIBaseComponent Base;
+    public StringHash AptEventCursorChanged;
+    public InGameUIDecalCloudSettings DecalCloud;
 }
