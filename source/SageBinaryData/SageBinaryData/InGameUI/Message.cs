@@ -1,13 +1,12 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct InGameUIMessageSettings
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct InGameUIMessageSettings
-    {
-        public Time Delay;
-        public RGBColor Color1;
-        public RGBColor Color2;
-        public FontDesc Font;
-    }
+    public Time Delay;
+    public RGBColor Color1;
+    public RGBColor Color2;
+    public FontDesc Font;
 }

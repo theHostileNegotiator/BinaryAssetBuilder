@@ -1,11 +1,10 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct InGameUIDrawableCaptionSettings
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct InGameUIDrawableCaptionSettings
-    {
-        public FontDesc Font;
-        public RGBColor Color;
-    }
+    public FontDesc Font;
+    public RGBColor Color;
 }

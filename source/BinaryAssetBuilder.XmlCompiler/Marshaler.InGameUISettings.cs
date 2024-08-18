@@ -91,7 +91,9 @@ public static partial class Marshaler
         Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.OtherStructureTypeTab), null), &objT->OtherStructureTypeTab, state);
         Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.PlanningMode), null), &objT->PlanningMode, state);
         Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.PlayerStatus), null), &objT->PlayerStatus, state);
+#if TIBERIUMWARS
         Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.ReplayFastForward), null), &objT->ReplayFastForward, state);
+#endif
         Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.ReverseMove), null), &objT->ReverseMove, state);
         Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.SelectionRefinementTab), null), &objT->SelectionRefinementTab, state);
         Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.SellMode), null), &objT->SellMode, state);
@@ -103,6 +105,17 @@ public static partial class Marshaler
         Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.VoiceChatMode), null), &objT->VoiceChatMode, state);
         Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.VoiceChatTalk), null), &objT->VoiceChatTalk, state);
         Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.WaypointMode), null), &objT->WaypointMode, state);
+#if KANESWRATH
+        Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.MgMove), null), &objT->MgMove, state);
+        Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.MgPatrol), null), &objT->MgPatrol, state);
+        Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.MgIntercept), null), &objT->MgIntercept, state);
+        Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.MgAirlift), null), &objT->MgAirlift, state);
+        Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.MgNavalMove), null), &objT->MgNavalMove, state);
+        Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.PrevBase), null), &objT->PrevBase, state);
+        Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.PrevStrikeForce), null), &objT->PrevStrikeForce, state);
+        Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.NextStrikeForce), null), &objT->NextStrikeForce, state);
+        Marshal(node.GetChildNode(nameof(InGameUIFixedButtonHelp.NextBase), null), &objT->NextBase, state);
+#endif
     }
 
     public static unsafe void Marshal(Node node, InGameUIFloatingTextSettings* objT, Tracker state)
@@ -251,6 +264,9 @@ public static partial class Marshaler
         Marshal(node.GetChildNode(nameof(InGameUISettings.ObjectivePresentation), null), &objT->ObjectivePresentation, state);
         Marshal(node.GetChildNode(nameof(InGameUISettings.Subtitle), null), &objT->Subtitle, state);
         Marshal(node.GetChildNode(nameof(InGameUISettings.Timer), null), &objT->Timer, state);
+#if KANESWRATH
+        Marshal(node.GetChildNode(nameof(InGameUISettings.FeedbackText), null), &objT->FeedbackText, state);
+#endif
         Marshal(node, (BaseInheritableAsset*)objT, state);
     }
 }

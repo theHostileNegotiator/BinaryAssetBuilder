@@ -235,14 +235,6 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
 
-            (typeof(StringHashTable),
-#if TIBERIUMWARS
-            0x2C112832u,
-#elif KANESWRATH
-            0xCBB109A0u,
-#endif
-            false),
-
             (typeof(ExperienceLevelTemplate),
 #if TIBERIUMWARS
             0xAE55047Bu,
@@ -251,6 +243,20 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
 
+            (typeof(StringHashTable),
+#if TIBERIUMWARS
+            0x2C112832u,
+#elif KANESWRATH
+            0xCBB109A0u,
+#endif
+            false),
+            (typeof(InGameUISettings),
+#if TIBERIUMWARS
+            0x49FE3760u,
+#elif KANESWRATH
+            0xE1800214u,
+#endif
+            false),
             (typeof(DamageFX),
 #if TIBERIUMWARS
             0x4DF81EBDu,
@@ -299,6 +305,41 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
             (typeof(LogicCommandSet), 0x6D148BD7u, false),
+
+
+            (typeof(InGameUIGroupSelectionCommandSlots), 0xF6CE1A68u, false),
+            (typeof(InGameUILookAtCommandSlots), 0x8F9F9918u, false),
+            (typeof(InGameUITacticalCommandSlots),
+#if TIBERIUMWARS
+            0xC24AEFF1u,
+#elif KANESWRATH
+            0xC24AEFF1u,
+#endif
+            false),
+            (typeof(InGameUIVoiceChatCommandSlots), 0x3592E352u, false),
+            (typeof(InGameUISideBarCommandSlots),
+#if TIBERIUMWARS
+            0xAF956455u,
+#elif KANESWRATH
+            0xAC67CEF0u,
+#endif
+            false),
+            (typeof(InGameUIPlayerPowerCommandSlots), 0x4AB425C6u, false),
+            (typeof(InGameUIUnitAbilityCommandSlots), 0x9DAA4182u, false),
+
+
+
+            (typeof(InGameUIFixedElementHotKeySlotMap),
+#if TIBERIUMWARS
+            0x475EA260u,
+#elif KANESWRATH
+            0x4571AA6Bu,
+#endif
+            false),
+#if KANESWRATH
+            (typeof(MetaGameUITacticalCommandSlots), 0x8679A22Fu, false),
+            (typeof(MetaGameUICommonOpCommandSlots), 0xAB6D2D46u, false),
+#endif
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);

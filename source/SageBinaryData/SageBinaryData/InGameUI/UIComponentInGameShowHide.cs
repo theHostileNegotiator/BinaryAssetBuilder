@@ -1,10 +1,9 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct UIComponentInGameShowHide
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct UIComponentInGameShowHide
-    {
-        public UIBaseComponent Base;
-    }
+    public UIBaseComponent Base;
 }

@@ -20,6 +20,9 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(UIComponentInGameText.AptTokenEnergy), null), &objT->AptTokenEnergy, state);
         Marshal(node.GetAttributeValue(nameof(UIComponentInGameText.AptTokenShortDesc), null), &objT->AptTokenShortDesc, state);
         Marshal(node.GetAttributeValue(nameof(UIComponentInGameText.AptTokenLongDesc), null), &objT->AptTokenLongDesc, state);
+#if KANESWRATH
+        Marshal(node.GetAttributeValue(nameof(UIComponentInGameText.AptTokenMoreInfo), null), &objT->AptTokenMoreInfo, state);
+#endif
         Marshal(node.GetAttributeValue(nameof(UIComponentInGameText.ProductionTextConstruction), null), &objT->ProductionTextConstruction, state);
         Marshal(node.GetAttributeValue(nameof(UIComponentInGameText.ProductionTextUpgrade), null), &objT->ProductionTextUpgrade, state);
         Marshal(node.GetAttributeValue(nameof(UIComponentInGameText.ProductionTextRecruit), null), &objT->ProductionTextRecruit, state);

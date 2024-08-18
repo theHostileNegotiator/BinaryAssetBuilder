@@ -1,13 +1,12 @@
 ﻿using System.Runtime.InteropServices;
 using AnsiString = Relo.String<sbyte>;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct FontDesc
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct FontDesc
-    {
-        public AnsiString Name;
-        public uint Size;
-        public SageBool Bold;
-    }
+    public AnsiString Name;
+    public uint Size;
+    public SageBool Bold;
 }

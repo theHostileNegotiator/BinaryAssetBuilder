@@ -64,7 +64,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [x] ExperienceLevelTemplate
 * [ ] MissionObjectiveList                                      0xC385A8C1
 * [x] StringHashTable
-* [ ] InGameUISettings                                          0x49FE3760
+* [x] InGameUISettings
 * [x] DamageFX
 * [ ] MultiplayerSettings                                       0x1BAF4C42
 * [ ] OnlineChatColors                                          0xF3645AA7
@@ -101,13 +101,13 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] MappableKey                                               0xE005A668
 * [ ] HotKeySlot                                                0x1AC54E60
 * [ ] DefaultHotKeys                                            0x0E12479D
-* [ ] InGameUIGroupSelectionCommandSlots                        0xF6CE1A68
-* [ ] InGameUILookAtCommandSlots                                0x8F9F9918
-* [ ] InGameUITacticalCommandSlots                              0xC24AEFF1
-* [ ] InGameUIVoiceChatCommandSlots                             0x3592E352
-* [ ] InGameUISideBarCommandSlots                               0xAF956455
-* [ ] InGameUIPlayerPowerCommandSlots                           0x4AB425C6
-* [ ] InGameUIUnitAbilityCommandSlots                           0x9DAA4182
+* [x] InGameUIGroupSelectionCommandSlots
+* [x] InGameUILookAtCommandSlots
+* [x] InGameUITacticalCommandSlots
+* [x] InGameUIVoiceChatCommandSlots
+* [x] InGameUISideBarCommandSlots
+* [x] InGameUIPlayerPowerCommandSlots
+* [x] InGameUIUnitAbilityCommandSlots
 * [ ] GameScriptList                                            0x5AC6FA18
 * [ ] IntelDB                                                   0xFBB64F90
 * [ ] BootupDisplaySequence                                     0x84C1C2F0
@@ -118,7 +118,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] DLContent                                                 0x4E1A5713
 * [ ] PhaseEffect                                               0x4877D566
 * [ ] ConnectionLineManager                                     0x7AEB73B2
-* [ ] InGameUIFixedElementHotKeySlotMap                         0x475EA260
+* [x] InGameUIFixedElementHotKeySlotMap
 
 ### Tiberium Wars Only Types
 * [ ] AudioFileMP3Passthrough                                   0x610DB321
@@ -134,8 +134,8 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] PlayerPowerButtonTemplate
 * [ ] StrikeForceBuildTemplate
 * [ ] MetagameOperationsInfoType
-* [ ] MetaGameUITacticalCommandSlots
-* [ ] MetaGameUICommonOpCommandSlots
+* [x] MetaGameUITacticalCommandSlots
+* [x] MetaGameUICommonOpCommandSlots
 * [ ] MetaGameMapZoneData
 * [ ] MetaGameStaticData
 * [ ] ButtonSingleStateData

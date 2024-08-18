@@ -1,12 +1,11 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct UIComponentObjectAction
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct UIComponentObjectAction
-    {
-        public UIBaseComponent Base;
-        public Color3f AttackMoveColor;
-        public Color3f MoveColor;
-    }
+    public UIBaseComponent Base;
+    public Color3f AttackMoveColor;
+    public Color3f MoveColor;
 }

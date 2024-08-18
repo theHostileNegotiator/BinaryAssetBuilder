@@ -1,11 +1,10 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct UIComponentFormation
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct UIComponentFormation
-    {
-        public UIBaseComponent Base;
-        public float MaxDragLength;
-    }
+    public UIBaseComponent Base;
+    public float MaxDragLength;
 }

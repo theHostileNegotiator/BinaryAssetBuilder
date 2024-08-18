@@ -9,6 +9,10 @@ public static partial class Marshaler
         {
             return;
         }
+#if KANESWRATH
+        Marshal(node.GetChildNode(nameof(UIComponentVictoryDefeat.PostEndGameMusic), null), &objT->PostEndGameMusic, state);
+        Marshal(node.GetChildNodes(nameof(UIComponentVictoryDefeat.EndGameMusicAlias)), &objT->EndGameMusicAlias, state);
+#endif
         Marshal(node, (UIBaseComponent*)objT, state);
     }
 }

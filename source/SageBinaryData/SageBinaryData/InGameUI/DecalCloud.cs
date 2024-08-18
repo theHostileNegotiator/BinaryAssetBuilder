@@ -1,13 +1,15 @@
 ﻿using Relo;
 using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct InGameUIDecalCloudSettings
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct InGameUIDecalCloudSettings
-    {
-        public AssetReference<Texture> BuildTexture;
-        public AssetReference<Texture> DefenseTexture;
-        public AssetReference<Texture> SpecialPowerRestrictionTexture;
-    }
+    public AssetReference<Texture> BuildTexture;
+    public AssetReference<Texture> DefenseTexture;
+    public AssetReference<Texture> SpecialPowerRestrictionTexture;
+#if KANESWRATH
+    public AssetReference<Texture> AreaOfInfluenceTexture;
+#endif
 }

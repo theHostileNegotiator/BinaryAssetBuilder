@@ -1,14 +1,13 @@
 ﻿using System.Runtime.InteropServices;
 using AnsiString = Relo.String<sbyte>;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct InGameUISimpleHelpTemplate
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct InGameUISimpleHelpTemplate
-    {
-        public AnsiString Title;
-        public AnsiString Description;
-        public AnsiString TypeDescription;
-        public AnsiString Instructions;
-    }
+    public AnsiString Title;
+    public AnsiString Description;
+    public AnsiString TypeDescription;
+    public AnsiString Instructions;
 }
