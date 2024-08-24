@@ -142,6 +142,17 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+            (typeof(TargetingCompareList), 0x57CA5C81u, false),
+            (typeof(TargetingDistanceCompare),
+#if TIBERIUMWARS
+            0xED45F096u,
+#elif KANESWRATH
+            0xCD8C1030u,
+#endif
+            false),
+            (typeof(TargetingCombatChainCompare), 0x553808EFu, false),
+            (typeof(TargetingInTurretArcCompare), 0xCD24391Au, false),
+
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
