@@ -182,6 +182,9 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+            (typeof(MissionTemplate), 0x0D283295u, false),
+            (typeof(TheaterOfWarTemplate), 0xE60C9724u, false),
+            (typeof(CampaignTemplate), 0xAC60B530u, false),
 
             (typeof(RadiusCursorLibrary),
 #if TIBERIUMWARS
@@ -339,6 +342,7 @@ public class Plugin : IAssetBuilderPlugin
             (typeof(InGameUIUnitAbilityCommandSlots), 0x9DAA4182u, false),
 
 
+            (typeof(IntelDB), 0xFBB64F90u, false),
 
             (typeof(InGameUIFixedElementHotKeySlotMap),
 #if TIBERIUMWARS

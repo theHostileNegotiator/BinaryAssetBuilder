@@ -34,9 +34,9 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] GameMap                                                   0x3EC9C79B
 * [x] AttributeModifier
 * [x] ArmorTemplate
-* [ ] MissionTemplate                                           0x0D283295
-* [ ] TheaterOfWarTemplate                                      0xE60C9724
-* [ ] CampaignTemplate                                          0xAC60B530
+* [x] MissionTemplate
+* [x] TheaterOfWarTemplate
+* [x] CampaignTemplate
 * [x] RadiusCursorLibrary
 * [ ] AudioFile                                                 0x46410F77
 * [ ] AudioEvent                                                0x1B886049
@@ -109,7 +109,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [x] InGameUIPlayerPowerCommandSlots
 * [x] InGameUIUnitAbilityCommandSlots
 * [ ] GameScriptList                                            0x5AC6FA18
-* [ ] IntelDB                                                   0xFBB64F90
+* [x] IntelDB
 * [ ] BootupDisplaySequence                                     0x84C1C2F0
 * [ ] UnitTypeIcon                                              0xF7AB74BE
 * [ ] ImageSequence                                             0x217CF953
