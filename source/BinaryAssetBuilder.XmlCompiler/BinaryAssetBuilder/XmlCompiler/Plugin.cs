@@ -142,6 +142,33 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+
+            (typeof(MpGameRules),
+#if TIBERIUMWARS
+            0xEDDBB607u,
+#elif KANESWRATH
+            0x79D42582u,
+#endif
+            false),
+
+
+            (typeof(MultiplayerSettings),
+#if TIBERIUMWARS
+            0x1BAF4C42u,
+#elif KANESWRATH
+            0x801CBBCEu,
+#endif
+            false),
+            (typeof(OnlineChatColors), 0xF3645AA7u, false),
+            (typeof(MultiplayerColor),
+#if TIBERIUMWARS
+            0x966F336Au,
+#elif KANESWRATH
+            0x73A5BE3Cu,
+#endif
+            false),
+
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);

@@ -60,15 +60,15 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] MusicScriptConditionNugget_And                            0x10173347
 * [ ] MusicScriptTrack                                          0x702C8407
 * [ ] LocalBuildListMonitor                                     0x99CC030A
-* [ ] MpGameRules                                               0xEDDBB607
+* [x] MpGameRules
 * [ ] ExperienceLevelTemplate                                   0xAE55047B
 * [ ] MissionObjectiveList                                      0xC385A8C1
 * [ ] StringHashTable                                           0x2C112832
 * [ ] InGameUISettings                                          0x49FE3760
 * [ ] DamageFX                                                  0x4DF81EBD
-* [ ] MultiplayerSettings                                       0x1BAF4C42
-* [ ] OnlineChatColors                                          0xF3645AA7
-* [ ] MultiplayerColor                                          0x966F336A
+* [x] MultiplayerSettings
+* [x] OnlineChatColors
+* [x] MultiplayerColor
 * [ ] GameLODPreset                                             0x19DAC24D
 * [ ] StaticGameLOD                                             0xBEAF1CC9
 * [ ] DynamicGameLOD                                            0x71BAD792

@@ -9,6 +9,9 @@ public static partial class Marshaler
         {
             return;
         }
+#if KANESWRATH
+        Marshal(node.GetAttributeValue(nameof(MultiplayerColor.MetaGameSide), null), &objT->MetaGameSide, state);
+#endif
         Marshal(node.GetChildNode(nameof(MultiplayerColor.RGBColor), null), &objT->RGBColor, state);
         Marshal(node.GetChildNode(nameof(MultiplayerColor.RGBColorT), null), &objT->RGBColorT, state);
         Marshal(node.GetChildNode(nameof(MultiplayerColor.RGBNightColor), null), &objT->RGBNightColor, state);
