@@ -168,32 +168,6 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
 
-            (typeof(AttributeModifier),
-#if TIBERIUMWARS
-            0xD24E7201u,
-#elif KANESWRATH
-            0x8C925761u,
-#endif
-            false),
-            (typeof(ArmorTemplate),
-#if TIBERIUMWARS
-            0x9CDD1086u,
-#elif KANESWRATH
-            0x6D59C409u,
-#endif
-            false),
-            (typeof(MissionTemplate), 0x0D283295u, false),
-            (typeof(TheaterOfWarTemplate), 0xE60C9724u, false),
-            (typeof(CampaignTemplate), 0xAC60B530u, false),
-
-            (typeof(RadiusCursorLibrary),
-#if TIBERIUMWARS
-            0xD62B490Fu,
-#elif KANESWRATH
-            0xF133BF97u,
-#endif
-            false),
-
             (typeof(SpecialPowerTemplate),
 #if TIBERIUMWARS
             0x5EF0ACA9u,
@@ -235,6 +209,89 @@ public class Plugin : IAssetBuilderPlugin
             0xB7A2C222u,
 #elif KANESWRATH
             0x609F30D5u,
+#endif
+            false),
+
+            (typeof(AttributeModifier),
+#if TIBERIUMWARS
+            0xD24E7201u,
+#elif KANESWRATH
+            0x8C925761u,
+#endif
+            false),
+            (typeof(ArmorTemplate),
+#if TIBERIUMWARS
+            0x9CDD1086u,
+#elif KANESWRATH
+            0x6D59C409u,
+#endif
+            false),
+            (typeof(MissionTemplate), 0x0D283295u, false),
+            (typeof(TheaterOfWarTemplate), 0xE60C9724u, false),
+            (typeof(CampaignTemplate), 0xAC60B530u, false),
+            (typeof(RadiusCursorLibrary),
+#if TIBERIUMWARS
+            0xD62B490Fu,
+#elif KANESWRATH
+            0xF133BF97u,
+#endif
+            false),
+
+            (typeof(MusicPalette), 0x6A7AF822u, false),
+            (typeof(MusicScriptConditionNugget_LocalPlayerIsObserver), 0xAFB6AF3Au, false),
+            (typeof(MusicScriptConditionNugget_UnitsFarFromBase),
+#if TIBERIUMWARS
+            0xD889BF98u,
+#elif KANESWRATH
+            0x36EB813Fu,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_TimeFromStartOfLevel),
+#if TIBERIUMWARS
+            0xAA4A9E23u,
+#elif KANESWRATH
+            0x61445394u,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_TrackPlayedCount),
+#if TIBERIUMWARS
+            0x4FCFFAB1u,
+#elif KANESWRATH
+            0x3C032973u,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_SpecificTrackTypePlaying), 0xBCAD9B77u, false),
+            (typeof(MusicScriptConditionNugget_AnyTrackPlaying),  0x337BC326u, false),
+            (typeof(MusicScriptConditionNugget_ObjectsOfTypeExist),
+#if TIBERIUMWARS
+            0x9586411Cu,
+#elif KANESWRATH
+            0x54442549u,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_EvaEventPlayedRecently),
+#if TIBERIUMWARS
+            0x1F200F13u,
+#elif KANESWRATH
+            0x4A18D4E4u,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_ObjectsNearEvaEvent),
+#if TIBERIUMWARS
+            0x0EC4D160u,
+#elif KANESWRATH
+            0xA9F67F36u,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_ScoredKillCount), 0x5C0F93DCu, false),
+            (typeof(MusicScriptConditionNugget_Not),  0xB886383Bu, false),
+            (typeof(MusicScriptConditionNugget_Or), 0x81114695u, false),
+            (typeof(MusicScriptConditionNugget_And), 0x10173347u, false),
+            (typeof(MusicScriptTrack),
+#if TIBERIUMWARS
+            0x702C8407u,
+#elif KANESWRATH
+            0x7AC30661u,
 #endif
             false),
 
