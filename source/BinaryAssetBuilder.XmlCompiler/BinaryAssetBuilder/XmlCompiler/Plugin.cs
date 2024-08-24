@@ -238,6 +238,13 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
 
+            (typeof(MpGameRules),
+#if TIBERIUMWARS
+            0xEDDBB607u,
+#elif KANESWRATH
+            0x79D42582u,
+#endif
+            false),
             (typeof(ExperienceLevelTemplate),
 #if TIBERIUMWARS
             0xAE55047Bu,
@@ -267,7 +274,21 @@ public class Plugin : IAssetBuilderPlugin
             0xEC4577C9u,
 #endif
             false),
-
+            (typeof(MultiplayerSettings),
+#if TIBERIUMWARS
+            0x1BAF4C42u,
+#elif KANESWRATH
+            0x801CBBCEu,
+#endif
+            false),
+            (typeof(OnlineChatColors), 0xF3645AA7u, false),
+            (typeof(MultiplayerColor),
+#if TIBERIUMWARS
+            0x966F336Au,
+#elif KANESWRATH
+            0x73A5BE3Cu,
+#endif
+            false),
             (typeof(GameLODPreset),
 #if TIBERIUMWARS
             0x19DAC24Du,
