@@ -142,6 +142,65 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+            (typeof(MusicPalette), 0x6A7AF822u, false),
+            (typeof(MusicScriptConditionNugget_LocalPlayerIsObserver), 0xAFB6AF3Au, false),
+            (typeof(MusicScriptConditionNugget_UnitsFarFromBase),
+#if TIBERIUMWARS
+            0xD889BF98u,
+#elif KANESWRATH
+            0x36EB813Fu,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_TimeFromStartOfLevel),
+#if TIBERIUMWARS
+            0xAA4A9E23u,
+#elif KANESWRATH
+            0x61445394u,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_TrackPlayedCount),
+#if TIBERIUMWARS
+            0x4FCFFAB1u,
+#elif KANESWRATH
+            0x3C032973u,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_SpecificTrackTypePlaying), 0xBCAD9B77u, false),
+            (typeof(MusicScriptConditionNugget_AnyTrackPlaying),  0x337BC326u, false),
+            (typeof(MusicScriptConditionNugget_ObjectsOfTypeExist),
+#if TIBERIUMWARS
+            0x9586411Cu,
+#elif KANESWRATH
+            0x54442549u,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_EvaEventPlayedRecently),
+#if TIBERIUMWARS
+            0x1F200F13u,
+#elif KANESWRATH
+            0x4A18D4E4u,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_ObjectsNearEvaEvent),
+#if TIBERIUMWARS
+            0x0EC4D160u,
+#elif KANESWRATH
+            0xA9F67F36u,
+#endif
+            false),
+            (typeof(MusicScriptConditionNugget_ScoredKillCount), 0x5C0F93DCu, false),
+            (typeof(MusicScriptConditionNugget_Not),  0xB886383Bu, false),
+            (typeof(MusicScriptConditionNugget_Or), 0x81114695u, false),
+            (typeof(MusicScriptConditionNugget_And), 0x10173347u, false),
+            (typeof(MusicScriptTrack),
+#if TIBERIUMWARS
+            0x702C8407u,
+#elif KANESWRATH
+            0x7AC30661u,
+#endif
+            false),
+
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);

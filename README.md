@@ -44,21 +44,21 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] DialogEvent                                               0x8655CDB4
 * [ ] AmbientStream                                             0xDABB1C4B
 * [ ] Multisound                                                0x12B1C67C
-* [ ] MusicPalette                                              0x6A7AF822
-* [ ] MusicScriptConditionNugget_LocalPlayerIsObserver          0xAFB6AF3A
-* [ ] MusicScriptConditionNugget_UnitsFarFromBase               0xD889BF98
-* [ ] MusicScriptConditionNugget_TimeFromStartOfLevel           0xAA4A9E23
-* [ ] MusicScriptConditionNugget_TrackPlayedCount               0x4FCFFAB1
-* [ ] MusicScriptConditionNugget_SpecificTrackTypePlaying       0xBCAD9B77
-* [ ] MusicScriptConditionNugget_AnyTrackPlaying                0x337BC326
-* [ ] MusicScriptConditionNugget_ObjectsOfTypeExist             0x9586411C
-* [ ] MusicScriptConditionNugget_EvaEventPlayedRecently         0x1F200F13
-* [ ] MusicScriptConditionNugget_ObjectsNearEvaEvent            0x0EC4D160
-* [ ] MusicScriptConditionNugget_ScoredKillCount                0x5C0F93DC
-* [ ] MusicScriptConditionNugget_Not                            0xB886383B
-* [ ] MusicScriptConditionNugget_Or                             0x81114695
-* [ ] MusicScriptConditionNugget_And                            0x10173347
-* [ ] MusicScriptTrack                                          0x702C8407
+* [x] MusicPalette
+* [x] MusicScriptConditionNugget_LocalPlayerIsObserver
+* [x] MusicScriptConditionNugget_UnitsFarFromBase
+* [x] MusicScriptConditionNugget_TimeFromStartOfLevel
+* [x] MusicScriptConditionNugget_TrackPlayedCount
+* [x] MusicScriptConditionNugget_SpecificTrackTypePlaying
+* [x] MusicScriptConditionNugget_AnyTrackPlaying
+* [x] MusicScriptConditionNugget_ObjectsOfTypeExist
+* [x] MusicScriptConditionNugget_EvaEventPlayedRecently
+* [x] MusicScriptConditionNugget_ObjectsNearEvaEvent
+* [x] MusicScriptConditionNugget_ScoredKillCount
+* [x] MusicScriptConditionNugget_Not
+* [x] MusicScriptConditionNugget_Or
+* [x] MusicScriptConditionNugget_And
+* [x] MusicScriptTrack
 * [ ] LocalBuildListMonitor                                     0x99CC030A
 * [ ] MpGameRules                                               0xEDDBB607
 * [ ] ExperienceLevelTemplate                                   0xAE55047B
