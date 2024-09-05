@@ -94,10 +94,10 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] CrowdResponse                                             0x66FB33A0
 * [ ] MapMetaData                                               0x59013A51
 * [ ] LargeGroupAudioMap                                        0x9CBC0553
-* [ ] AptAptData                                                0x36866072
-* [ ] AptConstData                                              0x1CE8E595
-* [ ] AptDatData                                                0x3BF7FEB9
-* [ ] AptGeometryData                                           0x58F89E8B
+* [x] AptAptData
+* [x] AptConstData
+* [x] AptDatData
+* [x] AptGeometryData
 * [ ] MappableKey                                               0xE005A668
 * [ ] HotKeySlot                                                0x1AC54E60
 * [ ] DefaultHotKeys                                            0x0E12479D

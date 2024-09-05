@@ -142,6 +142,17 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+            (typeof(AptAptData), 0x36866072u, false),
+            (typeof(AptConstData), 0x1CE8E595u, false),
+            (typeof(AptDatData), 0x3BF7FEB9u, false),
+            (typeof(AptGeometryData),
+#if TIBERIUMWARS
+            0x58F89E8Bu,
+#elif KANESWRATH
+            0x762BA1A7u,
+#endif
+            false),
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
