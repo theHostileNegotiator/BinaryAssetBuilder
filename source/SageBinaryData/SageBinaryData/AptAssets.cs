@@ -1,34 +1,33 @@
 ﻿using Relo;
 using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct AptAptData
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct AptAptData
-    {
-        public BaseAssetType Base;
-        public DataBlob File;
-    }
+    public BaseAssetType Base;
+    public DataBlob File;
+}
 
-    [StructLayout(LayoutKind.Sequential)]
-    public struct AptConstData
-    {
-        public BaseAssetType Base;
-        public DataBlob File;
-    }
+[StructLayout(LayoutKind.Sequential)]
+public struct AptConstData
+{
+    public BaseAssetType Base;
+    public DataBlob File;
+}
 
-    [StructLayout(LayoutKind.Sequential)]
-    public struct AptDatData
-    {
-        public BaseAssetType Base;
-        public DataBlob File;
-    }
+[StructLayout(LayoutKind.Sequential)]
+public struct AptDatData
+{
+    public BaseAssetType Base;
+    public DataBlob File;
+}
 
-    [StructLayout(LayoutKind.Sequential)]
-    public struct AptGeometryData
-    {
-        public BaseAssetType Base;
-        public DataBlob File;
-        public int AptID;
-    }
+[StructLayout(LayoutKind.Sequential)]
+public struct AptGeometryData
+{
+    public BaseAssetType Base;
+    public DataBlob File;
+    public int AptID;
 }

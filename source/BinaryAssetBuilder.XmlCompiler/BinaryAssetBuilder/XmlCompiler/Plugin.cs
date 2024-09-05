@@ -398,6 +398,16 @@ public class Plugin : IAssetBuilderPlugin
             false),
             (typeof(LogicCommandSet), 0x6D148BD7u, false),
 
+            (typeof(AptAptData), 0x36866072u, false),
+            (typeof(AptConstData), 0x1CE8E595u, false),
+            (typeof(AptDatData), 0x3BF7FEB9u, false),
+            (typeof(AptGeometryData),
+#if TIBERIUMWARS
+            0x58F89E8Bu,
+#elif KANESWRATH
+            0x762BA1A7u,
+#endif
+            false),
 
             (typeof(InGameUIGroupSelectionCommandSlots), 0xF6CE1A68u, false),
             (typeof(InGameUILookAtCommandSlots), 0x8F9F9918u, false),
