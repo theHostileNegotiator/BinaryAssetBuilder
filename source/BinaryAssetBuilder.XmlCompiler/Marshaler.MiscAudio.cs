@@ -94,6 +94,14 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(MiscAudio.GuiYesNoDialogButtonClickedSound), null), &objT->GuiYesNoDialogButtonClickedSound, state);
         Marshal(node.GetAttributeValue(nameof(MiscAudio.GuiYesNoDialogButtonMouseOverSound), null), &objT->GuiYesNoDialogButtonMouseOverSound, state);
         Marshal(node.GetAttributeValue(nameof(MiscAudio.GuiYesNoDialogButtonMouseOutSound), null), &objT->GuiYesNoDialogButtonMouseOutSound, state);
+#if KANESWRATH
+        Marshal(node.GetAttributeValue(nameof(MiscAudio.AutoResolveSound), null), &objT->AutoResolveSound, state);
+        Marshal(node.GetAttributeValue(nameof(MiscAudio.AutoResolveWinSound), null), &objT->AutoResolveWinSound, state);
+        Marshal(node.GetAttributeValue(nameof(MiscAudio.AutoResolveLoseSound), null), &objT->AutoResolveLoseSound, state);
+        Marshal(node.GetAttributeValue(nameof(MiscAudio.MetaGameAutoResolveMusic), null), &objT->MetaGameAutoResolveMusic, state);
+        Marshal(node.GetAttributeValue(nameof(MiscAudio.MetaGameAutoResolveWinMusic), null), &objT->MetaGameAutoResolveWinMusic, state);
+        Marshal(node.GetAttributeValue(nameof(MiscAudio.MetaGameAutoResolveLoseMusic), null), &objT->MetaGameAutoResolveLoseMusic, state);
+#endif
         Marshal(node, (BaseAssetType*)objT, state);
     }
 }

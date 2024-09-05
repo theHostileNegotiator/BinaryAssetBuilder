@@ -142,6 +142,22 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+
+            (typeof(MiscAudio),
+#if TIBERIUMWARS
+            0xFA4817E2u,
+#elif KANESWRATH
+            0x92862F79u,
+#endif
+            false),
+            (typeof(AudioSettings),
+#if TIBERIUMWARS
+            0x89AA7DDEu,
+#elif KANESWRATH
+            0xD842549Du,
+#endif
+            false),
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
