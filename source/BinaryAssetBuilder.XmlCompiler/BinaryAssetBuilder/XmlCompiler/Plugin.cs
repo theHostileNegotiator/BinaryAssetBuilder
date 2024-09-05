@@ -142,6 +142,24 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+
+            (typeof(MappableKey), 0xE005A668u, false),
+            (typeof(HotKeySlot),
+#if TIBERIUMWARS
+            0x1AC54E60u,
+#elif KANESWRATH
+            0x07C51D32u,
+#endif
+            false),
+            (typeof(DefaultHotKeys),
+#if TIBERIUMWARS
+            0x0E12479Du,
+#elif KANESWRATH
+            0x12CB83DCu,
+#endif
+            false),
+
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
