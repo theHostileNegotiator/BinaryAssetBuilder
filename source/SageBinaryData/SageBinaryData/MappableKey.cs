@@ -1,12 +1,11 @@
 ﻿using System.Runtime.InteropServices;
 using AnsiString = Relo.String<sbyte>;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct MappableKey
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct MappableKey
-    {
-        public BaseInheritableAsset Base;
-        public AnsiString KeyDef;
-    }
+    public BaseInheritableAsset Base;
+    public AnsiString KeyDef;
 }

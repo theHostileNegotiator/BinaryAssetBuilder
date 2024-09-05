@@ -98,9 +98,9 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [x] AptConstData
 * [x] AptDatData
 * [x] AptGeometryData
-* [ ] MappableKey                                               0xE005A668
-* [ ] HotKeySlot                                                0x1AC54E60
-* [ ] DefaultHotKeys                                            0x0E12479D
+* [x] MappableKey
+* [x] HotKeySlot
+* [x] DefaultHotKeys
 * [x] InGameUIGroupSelectionCommandSlots
 * [x] InGameUILookAtCommandSlots
 * [x] InGameUITacticalCommandSlots
