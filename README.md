@@ -10,7 +10,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] GameObject                                                0x132408DB
 * [ ] FXParticleSystemTemplate                                  0xA148D511
 * [x] Weather                                                   0x368A8BA2
-* [ ] ShadowMap                                                 0xC6389FA6
+* [x] ShadowMap
 * [ ] WaterTransparency                                         0x331DA6CE
 * [ ] Texture
 * [ ] OnDemandTexture
@@ -86,7 +86,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] TargetingCombatChainCompare                               0x553808EF
 * [ ] TargetingInTurretArcCompare                               0xCD24391A
 * [ ] Road                                                      0xDCF3C28B
-* [ ] Environment                                               0x878C42E0
+* [x] Environment
 * [ ] LogicCommand                                              0x97D0A46E
 * [ ] LogicCommandSet                                           0x6D148BD7
 * [ ] MiscAudio                                                 0xFA4817E2

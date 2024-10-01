@@ -133,6 +133,13 @@ public class Plugin : IAssetBuilderPlugin
             0x77FDF1C6u,
 #endif
             false),
+            (typeof(ShadowMap),
+#if TIBERIUMWARS
+            0xC6389FA6u,
+#elif KANESWRATH
+            0xC5C47E46u,
+#endif
+            false),
 
 
             (typeof(AttributeModifier),
@@ -149,6 +156,15 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+            (typeof(SageBinaryData.Environment),
+#if TIBERIUMWARS
+            0x878C42E0u,
+#elif KANESWRATH
+            0x64ED86BAu,
+#endif
+            false),
+
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
