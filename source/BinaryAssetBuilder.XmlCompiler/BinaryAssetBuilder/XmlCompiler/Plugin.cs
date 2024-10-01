@@ -128,6 +128,13 @@ public class Plugin : IAssetBuilderPlugin
 
 
 
+            (typeof(GameMap),
+#if TIBERIUMWARS
+            0x3EC9C79Bu,
+#elif KANESWRATH
+            0x19F10771u,
+#endif
+            false),
             (typeof(AttributeModifier),
 #if TIBERIUMWARS
             0xD24E7201u,
@@ -142,6 +149,16 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+            (typeof(MissionObjectiveList),
+#if TIBERIUMWARS
+            0xC385A8C1u,
+#elif KANESWRATH
+            0xC087BBF2u,
+#endif
+            false),
+
+            (typeof(GameScriptList), 0x5AC6FA18u, false),
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);

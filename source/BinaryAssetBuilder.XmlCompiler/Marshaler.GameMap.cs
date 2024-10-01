@@ -110,7 +110,13 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(MapObjectUSP.Faction), null), &objT->Faction, state);
         Marshal(node.GetAttributeValue(nameof(MapObjectUSP.Team), null), &objT->Team, state);
         Marshal(node.GetAttributeValue(nameof(MapObjectUSP.Health), null), &objT->Health, state);
+#if KANESWRATH
+        Marshal(node.GetAttributeValue(nameof(MapObjectUSP.Unrest), null), &objT->Unrest, state);
+#endif
         Marshal(node.GetAttributeValue(nameof(MapObjectUSP.EventList), null), &objT->EventList, state);
+#if KANESWRATH
+        Marshal(node.GetAttributeValue(nameof(MapObjectUSP.StrikeForceTemplate), null), &objT->StrikeForceTemplate, state);
+#endif
         Marshal(node, (MapObject*)objT, state);
     }
 

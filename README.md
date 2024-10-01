@@ -31,7 +31,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] AIStrategicStateDefinition                                0x1E27DA26
 * [ ] AIBudgetStateDefinition                                   0xA10F9630
 * [ ] AITargetingHeuristic                                      0xB7A2C222
-* [ ] GameMap                                                   0x3EC9C79B
+* [x] GameMap
 * [x] AttributeModifier
 * [x] ArmorTemplate
 * [ ] MissionTemplate                                           0x0D283295
@@ -62,7 +62,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] LocalBuildListMonitor                                     0x99CC030A
 * [ ] MpGameRules                                               0xEDDBB607
 * [ ] ExperienceLevelTemplate                                   0xAE55047B
-* [ ] MissionObjectiveList                                      0xC385A8C1
+* [x] MissionObjectiveList
 * [ ] StringHashTable                                           0x2C112832
 * [ ] InGameUISettings                                          0x49FE3760
 * [ ] DamageFX                                                  0x4DF81EBD
@@ -108,7 +108,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] InGameUISideBarCommandSlots                               0xAF956455
 * [ ] InGameUIPlayerPowerCommandSlots                           0x4AB425C6
 * [ ] InGameUIUnitAbilityCommandSlots                           0x9DAA4182
-* [ ] GameScriptList                                            0x5AC6FA18
+* [x] GameScriptList
 * [ ] IntelDB                                                   0xFBB64F90
 * [ ] BootupDisplaySequence                                     0x84C1C2F0
 * [ ] UnitTypeIcon                                              0xF7AB74BE
