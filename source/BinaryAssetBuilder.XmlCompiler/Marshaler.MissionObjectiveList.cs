@@ -28,6 +28,9 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(MissionObjectiveTag.Script), null), &objT->Script, state);
         Marshal(node.GetAttributeValue(nameof(MissionObjectiveTag.Description), null), &objT->Description, state);
         Marshal(node.GetAttributeValue(nameof(MissionObjectiveTag.IsBonusObjective), "false"), &objT->IsBonusObjective, state);
+#if KANESWRATH
+        Marshal(node.GetAttributeValue(nameof(MissionObjectiveTag.Faction), null), &objT->Faction, state);
+#endif
         Marshal(node.GetChildNodes(nameof(MissionObjectiveTag.PresentationSettings)), &objT->PresentationSettings, state);
     }
 

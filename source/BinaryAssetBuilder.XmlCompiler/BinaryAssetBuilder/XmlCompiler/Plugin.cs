@@ -218,7 +218,13 @@ public class Plugin : IAssetBuilderPlugin
             0x609F30D5u,
 #endif
             false),
-
+            (typeof(GameMap),
+#if TIBERIUMWARS
+            0x3EC9C79Bu,
+#elif KANESWRATH
+            0x19F10771u,
+#endif
+            false),
             (typeof(AttributeModifier),
 #if TIBERIUMWARS
             0xD24E7201u,
@@ -316,7 +322,13 @@ public class Plugin : IAssetBuilderPlugin
             0xBD7DD70Eu,
 #endif
             false),
-
+            (typeof(MissionObjectiveList),
+#if TIBERIUMWARS
+            0xC385A8C1u,
+#elif KANESWRATH
+            0xC087BBF2u,
+#endif
+            false),
             (typeof(StringHashTable),
 #if TIBERIUMWARS
             0x2C112832u,
@@ -457,6 +469,7 @@ public class Plugin : IAssetBuilderPlugin
             (typeof(InGameUIUnitAbilityCommandSlots), 0x9DAA4182u, false),
 
 
+            (typeof(GameScriptList), 0x5AC6FA18u, false),
             (typeof(IntelDB), 0xFBB64F90u, false),
 
             (typeof(InGameUIFixedElementHotKeySlotMap),
@@ -470,7 +483,6 @@ public class Plugin : IAssetBuilderPlugin
             (typeof(MetaGameUITacticalCommandSlots), 0x8679A22Fu, false),
             (typeof(MetaGameUICommonOpCommandSlots), 0xAB6D2D46u, false),
 #endif
-
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
