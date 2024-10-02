@@ -116,8 +116,8 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] UnitOverlayIconSettings                                   0xDFC78E66
 * [ ] TheVersion                                                0xF659EF49
 * [ ] DLContent                                                 0x4E1A5713
-* [ ] PhaseEffect                                               0x4877D566
-* [ ] ConnectionLineManager                                     0x7AEB73B2
+* [x] PhaseEffect
+* [x] ConnectionLineManager
 * [ ] InGameUIFixedElementHotKeySlotMap                         0x475EA260
 
 ### Tiberium Wars Only Types

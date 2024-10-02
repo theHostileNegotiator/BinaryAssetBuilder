@@ -142,6 +142,17 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+
+            (typeof(PhaseEffect),
+#if TIBERIUMWARS
+            0x4877D566u,
+#elif KANESWRATH
+            0x052DD6F5u,
+#endif
+            false),
+            (typeof(ConnectionLineManager), 0x7AEB73B2u, false),
+
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
