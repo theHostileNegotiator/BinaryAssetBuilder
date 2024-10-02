@@ -1,17 +1,16 @@
-﻿#if TIBERIUMWARS
+﻿#if KANESWRATH
 using Relo;
 using SageBinaryData;
 
 public static partial class Marshaler
 {
-    public static unsafe void Marshal(Node node, PlayerPowerButtonTemplateData* objT, Tracker state)
+    public static unsafe void Marshal(Node node, PlayerPowerButtonTemplateDataRef* objT, Tracker state)
     {
         if (node is null)
         {
             return;
         }
-        Marshal(node.GetAttributeValue("id", null), &objT->Id, state);
-        Marshal(node.GetChildNode(nameof(PlayerPowerButtonTemplateData.State), null), &objT->State, state);
+        Marshal(node.GetAttributeValue(nameof(PlayerPowerButtonTemplateDataRef.StateData), null), &objT->StateData, state);
     }
 
     public static unsafe void Marshal(Node node, TargetedPlayerPowerButtonTemplateData* objT, Tracker state)
@@ -23,7 +22,7 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(TargetedPlayerPowerButtonTemplateData.ValidTargetCursor), null), &objT->ValidTargetCursor, state);
         Marshal(node.GetAttributeValue(nameof(TargetedPlayerPowerButtonTemplateData.InvalidTargetCursor), null), &objT->InvalidTargetCursor, state);
         Marshal(node.GetAttributeValue(nameof(TargetedPlayerPowerButtonTemplateData.RadiusCursor), null), &objT->RadiusCursor, state);
-        Marshal(node, (PlayerPowerButtonTemplateData*)objT, state);
+        Marshal(node, (PlayerPowerButtonTemplateDataRef*)objT, state);
     }
 
     public static unsafe void Marshal(Node node, MultipleTargetsTargetedPlayerPowerButtonTemplateData* objT, Tracker state)
@@ -49,7 +48,7 @@ public static partial class Marshaler
         Marshal(node, (TargetedPlayerPowerButtonTemplateData*)objT, state);
     }
 
-    public static unsafe void Marshal(Node node, PlayerPowerButtonTemplateData** objT, Tracker state)
+    public static unsafe void Marshal(Node node, PlayerPowerButtonTemplateDataRef** objT, Tracker state)
     {
         if (node is null)
         {
@@ -60,13 +59,13 @@ public static partial class Marshaler
         switch (typeId)
         {
             case 0x9C560552u:
-                MarshalPolymorphicType<MultiplePowersTargetedPlayerPowerButtonTemplateData, PlayerPowerButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<MultiplePowersTargetedPlayerPowerButtonTemplateData, PlayerPowerButtonTemplateDataRef>(node, objT, state);
                 break;
             case 0xA498FF1Fu:
-                MarshalPolymorphicType<MultipleTargetsTargetedPlayerPowerButtonTemplateData, PlayerPowerButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<MultipleTargetsTargetedPlayerPowerButtonTemplateData, PlayerPowerButtonTemplateDataRef>(node, objT, state);
                 break;
             case 0xAC45EA0Cu:
-                MarshalPolymorphicType<TargetedPlayerPowerButtonTemplateData, PlayerPowerButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<TargetedPlayerPowerButtonTemplateData, PlayerPowerButtonTemplateDataRef>(node, objT, state);
                 break;
             default:
                 MarshalUnknownPolymorphicType(node, objT, state);
@@ -74,13 +73,14 @@ public static partial class Marshaler
         }
     }
 
-    public static unsafe void Marshal(Node node, PlayerPowerButtonTemplateStore* objT, Tracker state)
+    public static unsafe void Marshal(Node node, PlayerPowerButtonTemplate* objT, Tracker state)
     {
         if (node is null)
         {
             return;
         }
-        Marshal(node.GetChildNode(nameof(PlayerPowerButtonTemplateStore.Templates), null), &objT->Templates, state);
+        Marshal(node.GetAttributeValue(nameof(PlayerPowerButtonTemplate.SpecialPower), null), &objT->SpecialPower, state);
+        MarshalSinglePolymorphic(node.GetChildNode(nameof(PlayerPowerButtonTemplate.Data), null), &objT->Data, state);
         Marshal(node, (BaseInheritableAsset*)objT, state);
     }
 }
