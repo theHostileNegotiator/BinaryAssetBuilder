@@ -142,6 +142,38 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+            (typeof(PackedTextureImage),
+#if TIBERIUMWARS
+            0x2FAEB748u,
+#elif KANESWRATH
+            0x8AA0FF90u,
+#endif
+            false),
+            (typeof(OnDemandTextureImage),
+#if TIBERIUMWARS
+            0xF3F4AEECu,
+#elif KANESWRATH
+            0xFBBF792Du,
+#endif
+            false),
+
+            (typeof(UnitTypeIcon),
+#if TIBERIUMWARS
+            0xF7AB74BEu,
+#elif KANESWRATH
+            0x4822A4B6u,
+#endif
+            false),
+            (typeof(ImageSequence), 0x217CF953u, false),
+            (typeof(UnitOverlayIconSettings),
+#if TIBERIUMWARS
+            0xDFC78E66u,
+#elif KANESWRATH
+            0x3AB4ECB5u,
+#endif
+            false),
+
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
