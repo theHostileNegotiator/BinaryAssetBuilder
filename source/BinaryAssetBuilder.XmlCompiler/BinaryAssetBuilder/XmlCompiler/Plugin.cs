@@ -394,7 +394,21 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
 
-            
+            (typeof(PackedTextureImage),
+#if TIBERIUMWARS
+            0x2FAEB748u,
+#elif KANESWRATH
+            0x8AA0FF90u,
+#endif
+            false),
+            (typeof(OnDemandTextureImage),
+#if TIBERIUMWARS
+            0xF3F4AEECu,
+#elif KANESWRATH
+            0xFBBF792Du,
+#endif
+            false),
+
             (typeof(StanceTemplate), 0x5C6E0E41u, false),
             (typeof(TargetingCompareList), 0x57CA5C81u, false),
             (typeof(TargetingDistanceCompare),
@@ -477,6 +491,23 @@ public class Plugin : IAssetBuilderPlugin
 
             (typeof(GameScriptList), 0x5AC6FA18u, false),
             (typeof(IntelDB), 0xFBB64F90u, false),
+
+            (typeof(UnitTypeIcon),
+#if TIBERIUMWARS
+            0xF7AB74BEu,
+#elif KANESWRATH
+            0x4822A4B6u,
+#endif
+            false),
+            (typeof(ImageSequence), 0x217CF953u, false),
+            (typeof(UnitOverlayIconSettings),
+#if TIBERIUMWARS
+            0xDFC78E66u,
+#elif KANESWRATH
+            0x3AB4ECB5u,
+#endif
+            false),
+
             (typeof(PhaseEffect),
 #if TIBERIUMWARS
             0x4877D566u,

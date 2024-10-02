@@ -1,12 +1,11 @@
 ﻿using Relo;
 using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct ImageSequence
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct ImageSequence
-    {
-        public BaseInheritableAsset Base;
-        public List<AssetReference<PackedTextureImage>> Image;
-    }
+    public BaseInheritableAsset Base;
+    public List<AssetReference<PackedTextureImage>> Image;
 }

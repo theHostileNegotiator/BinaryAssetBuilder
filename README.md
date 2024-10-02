@@ -75,8 +75,8 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [x] AudioLOD
 * [ ] VideoEventList                                            0x999FCBE3
 * [ ] UIConfigList                                              0xB3B7607A
-* [ ] PackedTextureImage                                        0x2FAEB748
-* [ ] OnDemandTextureImage                                      0xF3F4AEEC
+* [x] PackedTextureImage
+* [x] OnDemandTextureImage
 * [ ] TerrainTextureAtlas
 * [ ] Mouse                                                     0x73FE99B0
 * [ ] Achievement                                               0xC8D16E6D
@@ -111,9 +111,9 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [x] GameScriptList
 * [x] IntelDB
 * [ ] BootupDisplaySequence                                     0x84C1C2F0
-* [ ] UnitTypeIcon                                              0xF7AB74BE
-* [ ] ImageSequence                                             0x217CF953
-* [ ] UnitOverlayIconSettings                                   0xDFC78E66
+* [x] UnitTypeIcon
+* [x] ImageSequence
+* [x] UnitOverlayIconSettings
 * [ ] TheVersion                                                0xF659EF49
 * [ ] DLContent                                                 0x4E1A5713
 * [x] PhaseEffect

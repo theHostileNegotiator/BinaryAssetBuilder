@@ -1,13 +1,12 @@
 ﻿using Relo;
 using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct UnitTypeIcon
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct UnitTypeIcon
-    {
-        public BaseInheritableAsset Base;
-        public AssetReference<PackedTextureImage> Image;
-        public unsafe Coord2D* Offset;
-    }
+    public BaseInheritableAsset Base;
+    public AssetReference<PackedTextureImage> Image;
+    public unsafe Coord2D* Offset;
 }
