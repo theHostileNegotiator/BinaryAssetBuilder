@@ -477,7 +477,14 @@ public class Plugin : IAssetBuilderPlugin
 
             (typeof(GameScriptList), 0x5AC6FA18u, false),
             (typeof(IntelDB), 0xFBB64F90u, false),
-
+            (typeof(PhaseEffect),
+#if TIBERIUMWARS
+            0x4877D566u,
+#elif KANESWRATH
+            0x052DD6F5u,
+#endif
+            false),
+            (typeof(ConnectionLineManager), 0x7AEB73B2u, false),
             (typeof(InGameUIFixedElementHotKeySlotMap),
 #if TIBERIUMWARS
             0x475EA260u,

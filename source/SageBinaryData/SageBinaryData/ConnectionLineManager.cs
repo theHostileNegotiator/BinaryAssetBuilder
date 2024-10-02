@@ -1,11 +1,10 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct ConnectionLineManager
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct ConnectionLineManager
-    {
-        public BaseInheritableAsset Base;
-        public FXShaderMaterial FXShader;
-    }
+    public BaseInheritableAsset Base;
+    public FXShaderMaterial FXShader;
 }
