@@ -142,6 +142,16 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+
+            (typeof(Road),
+#if TIBERIUMWARS
+            0xDCF3C28Bu,
+#elif KANESWRATH
+            0x193A83E3u,
+#endif
+            false),
+
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
