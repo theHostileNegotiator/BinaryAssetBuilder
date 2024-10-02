@@ -73,7 +73,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] StaticGameLOD                                             0xBEAF1CC9
 * [ ] DynamicGameLOD                                            0x71BAD792
 * [ ] AudioLOD                                                  0x3ABBF00F
-* [ ] VideoEventList                                            0x999FCBE3
+* [x] VideoEventList
 * [ ] UIConfigList                                              0xB3B7607A
 * [ ] PackedTextureImage                                        0x2FAEB748
 * [ ] OnDemandTextureImage                                      0xF3F4AEEC
