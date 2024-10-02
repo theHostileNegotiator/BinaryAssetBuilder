@@ -406,7 +406,13 @@ public class Plugin : IAssetBuilderPlugin
             false),
             (typeof(TargetingCombatChainCompare), 0x553808EFu, false),
             (typeof(TargetingInTurretArcCompare), 0xCD24391Au, false),
-
+            (typeof(Road),
+#if TIBERIUMWARS
+            0xDCF3C28Bu,
+#elif KANESWRATH
+            0x193A83E3u,
+#endif
+            false),
             (typeof(SageBinaryData.Environment),
 #if TIBERIUMWARS
             0x878C42E0u,
