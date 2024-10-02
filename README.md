@@ -59,7 +59,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] MusicScriptConditionNugget_Or                             0x81114695
 * [ ] MusicScriptConditionNugget_And                            0x10173347
 * [ ] MusicScriptTrack                                          0x702C8407
-* [ ] LocalBuildListMonitor                                     0x99CC030A
+* [x] LocalBuildListMonitor
 * [ ] MpGameRules                                               0xEDDBB607
 * [ ] ExperienceLevelTemplate                                   0xAE55047B
 * [ ] MissionObjectiveList                                      0xC385A8C1

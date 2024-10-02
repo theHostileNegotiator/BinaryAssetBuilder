@@ -144,6 +144,15 @@ public class Plugin : IAssetBuilderPlugin
             false),
 
 
+            (typeof(LocalBuildListMonitor),
+#if TIBERIUMWARS
+            0x99CC030Au,
+#elif KANESWRATH
+            0x242B62FDu,
+#endif
+            false),
+
+
             (typeof(VideoEventList),
 #if TIBERIUMWARS
             0x999FCBE3u,
