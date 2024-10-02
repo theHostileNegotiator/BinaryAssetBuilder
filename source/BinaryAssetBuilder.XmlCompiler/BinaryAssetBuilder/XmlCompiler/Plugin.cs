@@ -550,9 +550,19 @@ public class Plugin : IAssetBuilderPlugin
             0x4571AA6Bu,
 #endif
             false),
-#if KANESWRATH
+#if TIBERIUMWARS
+
+            (typeof(UnitAbilityButtonTemplateStore), 0x5A48D289u, false),
+            (typeof(PlayerPowerButtonTemplateStore), 0xDB57AB4Fu, false),
+#elif KANESWRATH
+            (typeof(UnitAbilityButtonTemplate), 0x5E259F73u, false),
+            (typeof(PlayerPowerButtonTemplate), 0x50FE2D98u, false),
+
             (typeof(MetaGameUITacticalCommandSlots), 0x8679A22Fu, false),
             (typeof(MetaGameUICommonOpCommandSlots), 0xAB6D2D46u, false),
+
+            (typeof(ButtonSingleStateData), 0x542774ABu, false),
+
 #endif
         })
         {

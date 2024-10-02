@@ -1,16 +1,15 @@
-﻿#if TIBERIUMWARS
+﻿#if KANESWRATH
 using Relo;
 using SageBinaryData;
 
 public static partial class Marshaler
 {
-    public static unsafe void Marshal(Node node, UnitAbilityButtonTemplateData* objT, Tracker state)
+    public static unsafe void Marshal(Node node, UnitAbilityButtonTemplateDataRef* objT, Tracker state)
     {
         if (node is null)
         {
             return;
         }
-        Marshal(node.GetAttributeValue(nameof(UnitAbilityButtonTemplateData.Id), null), &objT->Id, state);
     }
 
     public static unsafe void Marshal(Node node, SingleStateUnitAbilityButtonTemplateData* objT, Tracker state)
@@ -19,8 +18,8 @@ public static partial class Marshaler
         {
             return;
         }
-        Marshal(node.GetChildNode(nameof(SingleStateUnitAbilityButtonTemplateData.State), null), &objT->State, state);
-        Marshal(node, (UnitAbilityButtonTemplateData*)objT, state);
+        Marshal(node.GetAttributeValue(nameof(SingleStateUnitAbilityButtonTemplateData.StateData), null), &objT->StateData, state);
+        Marshal(node, (UnitAbilityButtonTemplateDataRef*)objT, state);
     }
 
     public static unsafe void Marshal(Node node, BuildWallUnitAbilityButtonTemplateData* objT, Tracker state)
@@ -101,7 +100,7 @@ public static partial class Marshaler
         Marshal(node, (TargetedSpecialPowerUnitAbilityButtonTemplateData*)objT, state);
     }
 
-    public static unsafe void Marshal(Node node, UnitAbilityButtonTemplateData** objT, Tracker state)
+    public static unsafe void Marshal(Node node, UnitAbilityButtonTemplateDataRef** objT, Tracker state)
     {
         if (node is null)
         {
@@ -112,31 +111,34 @@ public static partial class Marshaler
         switch (typeId)
         {
             case 0xA2B25027u:
-                MarshalPolymorphicType<StanceUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<StanceUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateDataRef>(node, objT, state);
                 break;
             case 0xBADBAA95u:
-                MarshalPolymorphicType<SingleStateUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<SingleStateUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateDataRef>(node, objT, state);
                 break;
             case 0x88EDFB48u:
-                MarshalPolymorphicType<TargetedSpecialPowerUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<TargetedSpecialPowerUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateDataRef>(node, objT, state);
                 break;
             case 0x0DB9FD2Eu:
-                MarshalPolymorphicType<SpecialPowerUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<SpecialPowerUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateDataRef>(node, objT, state);
                 break;
             case 0x99E02045u:
-                MarshalPolymorphicType<PlayerUpgradeUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<PlayerUpgradeUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateDataRef>(node, objT, state);
                 break;
             case 0x29670E01u:
-                MarshalPolymorphicType<ObjectUpgradeUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<ObjectUpgradeUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateDataRef>(node, objT, state);
                 break;
             case 0xC678A25Eu:
-                MarshalPolymorphicType<MultiplePowersTargetedSpecialPowerUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<MultiplePowersTargetedSpecialPowerUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateDataRef>(node, objT, state);
                 break;
             case 0x53476790u:
-                MarshalPolymorphicType<EvacuateUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<EvacuateUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateDataRef>(node, objT, state);
                 break;
             case 0x314459F7u:
-                MarshalPolymorphicType<BuildWallUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateData>(node, objT, state);
+                MarshalPolymorphicType<BuildWallUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateDataRef>(node, objT, state);
+                break;
+            case 0xA704B069u:
+                MarshalPolymorphicType<ProductionQueueUnitAbilityButtonTemplateData, UnitAbilityButtonTemplateDataRef>(node, objT, state);
                 break;
             default:
                 MarshalUnknownPolymorphicType(node, objT, state);
@@ -144,13 +146,14 @@ public static partial class Marshaler
         }
     }
 
-    public static unsafe void Marshal(Node node, UnitAbilityButtonTemplateStore* objT, Tracker state)
+    public static unsafe void Marshal(Node node, UnitAbilityButtonTemplate* objT, Tracker state)
     {
         if (node is null)
         {
             return;
         }
-        Marshal(node.GetChildNode(nameof(UnitAbilityButtonTemplateStore.Templates), null), &objT->Templates, state);
+        Marshal(node.GetAttributeValue(nameof(UnitAbilityButtonTemplate.LogicCommand), null), &objT->LogicCommand, state);
+        MarshalSinglePolymorphic(node.GetChildNode(nameof(UnitAbilityButtonTemplate.Data), null), &objT->Data, state);
         Marshal(node, (BaseInheritableAsset*)objT, state);
     }
 }

@@ -1,4 +1,4 @@
-﻿#if TIBERIUMWARS
+﻿#if KANESWRATH
 using Relo;
 using System.Runtime.InteropServices;
 using AnsiString = Relo.String<sbyte>;
@@ -6,17 +6,16 @@ using AnsiString = Relo.String<sbyte>;
 namespace SageBinaryData;
 
 [StructLayout(LayoutKind.Sequential)]
-public struct PlayerPowerButtonTemplateData : IPolymorphic
+public struct PlayerPowerButtonTemplateDataRef : IPolymorphic
 {
     public uint TypeId;
-    public AssetReference<SpecialPowerTemplate> Id;
-    public ButtonState State;
+    public AssetReference<ButtonSingleStateData> StateData;
 }
 
 [StructLayout(LayoutKind.Sequential)]
 public struct TargetedPlayerPowerButtonTemplateData
 {
-    public PlayerPowerButtonTemplateData Base;
+    public PlayerPowerButtonTemplateDataRef Base;
     public AnsiString ValidTargetCursor;
     public AnsiString InvalidTargetCursor;
     public AnsiString RadiusCursor;
@@ -40,9 +39,10 @@ public struct MultiplePowersTargetedPlayerPowerButtonTemplateData
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public struct PlayerPowerButtonTemplateStore
+public struct PlayerPowerButtonTemplate
 {
     public BaseInheritableAsset Base;
-    public PolymorphicList<PlayerPowerButtonTemplateData> Templates;
+    public AssetReference<SpecialPowerTemplate> SpecialPower;
+    public unsafe PlayerPowerButtonTemplateDataRef* Data;
 }
 #endif

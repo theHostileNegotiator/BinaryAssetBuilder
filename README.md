@@ -125,20 +125,20 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] MP3MusicTrack
 * [ ] MP3DialogEvent
 * [ ] MP3AmbientStream
-* [ ] UnitAbilityButtonTemplateStore                            0x5A48D289
-* [ ] PlayerPowerButtonTemplateStore                            0xDB57AB4F
+* [x] UnitAbilityButtonTemplateStore
+* [x] PlayerPowerButtonTemplateStore
 * [ ] CommandSet                                                0x3CFF78A1
 
 ### Kane's Wrath Only Types
-* [ ] UnitAbilityButtonTemplate
-* [ ] PlayerPowerButtonTemplate
+* [x] UnitAbilityButtonTemplate
+* [x] PlayerPowerButtonTemplate
 * [ ] StrikeForceBuildTemplate
 * [ ] MetagameOperationsInfoType
 * [x] MetaGameUITacticalCommandSlots
 * [x] MetaGameUICommonOpCommandSlots
 * [ ] MetaGameMapZoneData
 * [ ] MetaGameStaticData
-* [ ] ButtonSingleStateData
+* [x] ButtonSingleStateData
 * [ ] JoypadCommandBarTemplate
 * [ ] JoypadCommandBarButtonTemplate
 * [ ] UIJoypadCommandBarButtonBuild
