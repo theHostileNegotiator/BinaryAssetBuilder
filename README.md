@@ -59,7 +59,7 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [x] MusicScriptConditionNugget_Or
 * [x] MusicScriptConditionNugget_And
 * [x] MusicScriptTrack
-* [ ] LocalBuildListMonitor                                     0x99CC030A
+* [x] LocalBuildListMonitor
 * [x] MpGameRules
 * [x] ExperienceLevelTemplate
 * [x] MissionObjectiveList
@@ -73,13 +73,13 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [x] StaticGameLOD
 * [x] DynamicGameLOD
 * [x] AudioLOD
-* [ ] VideoEventList                                            0x999FCBE3
+* [x] VideoEventList
 * [ ] UIConfigList                                              0xB3B7607A
 * [x] PackedTextureImage
 * [x] OnDemandTextureImage
 * [ ] TerrainTextureAtlas
-* [ ] Mouse                                                     0x73FE99B0
-* [ ] Achievement                                               0xC8D16E6D
+* [x] Mouse
+* [x] Achievement
 * [x] StanceTemplate
 * [x] TargetingCompareList
 * [x] TargetingDistanceCompare

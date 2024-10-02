@@ -307,7 +307,13 @@ public class Plugin : IAssetBuilderPlugin
             0x7AC30661u,
 #endif
             false),
-
+            (typeof(LocalBuildListMonitor),
+#if TIBERIUMWARS
+            0x99CC030Au,
+#elif KANESWRATH
+            0x242B62FDu,
+#endif
+            false),
             (typeof(MpGameRules),
 #if TIBERIUMWARS
             0xEDDBB607u,
@@ -393,6 +399,13 @@ public class Plugin : IAssetBuilderPlugin
             0x8F6AD19Du,
 #endif
             false),
+            (typeof(VideoEventList),
+#if TIBERIUMWARS
+            0x999FCBE3u,
+#elif KANESWRATH
+            0x18A04ECCu,
+#endif
+            false),
 
             (typeof(PackedTextureImage),
 #if TIBERIUMWARS
@@ -409,6 +422,20 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
 
+            (typeof(Mouse),
+#if TIBERIUMWARS
+            0x73FE99B0u,
+#elif KANESWRATH
+            0xA7B43DE6u,
+#endif
+            false),
+            (typeof(Achievement),
+#if TIBERIUMWARS
+            0xC8D16E6Du,
+#elif KANESWRATH
+            0x94372A1Au,
+#endif
+            false),
             (typeof(StanceTemplate), 0x5C6E0E41u, false),
             (typeof(TargetingCompareList), 0x57CA5C81u, false),
             (typeof(TargetingDistanceCompare),
