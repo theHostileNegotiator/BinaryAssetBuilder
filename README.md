@@ -78,8 +78,8 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] PackedTextureImage                                        0x2FAEB748
 * [ ] OnDemandTextureImage                                      0xF3F4AEEC
 * [ ] TerrainTextureAtlas
-* [ ] Mouse                                                     0x73FE99B0
-* [ ] Achievement                                               0xC8D16E6D
+* [x] Mouse
+* [x] Achievement
 * [ ] StanceTemplate                                            0x5C6E0E41
 * [ ] TargetingCompareList                                      0x57CA5C81
 * [ ] TargetingDistanceCompare                                  0xED45F096

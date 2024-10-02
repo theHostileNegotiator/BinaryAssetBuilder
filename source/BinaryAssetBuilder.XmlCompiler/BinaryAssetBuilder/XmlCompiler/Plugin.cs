@@ -142,6 +142,24 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+
+            (typeof(Mouse),
+#if TIBERIUMWARS
+            0x73FE99B0u,
+#elif KANESWRATH
+            0xA7B43DE6u,
+#endif
+            false),
+            (typeof(Achievement),
+#if TIBERIUMWARS
+            0xC8D16E6Du,
+#elif KANESWRATH
+            0x94372A1Au,
+#endif
+            false),
+
+
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
