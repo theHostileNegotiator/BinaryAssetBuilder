@@ -132,12 +132,12 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 ### Kane's Wrath Only Types
 * [ ] UnitAbilityButtonTemplate
 * [ ] PlayerPowerButtonTemplate
-* [ ] StrikeForceBuildTemplate
-* [ ] MetagameOperationsInfoType
+* [x] StrikeForceBuildTemplate
+* [x] MetagameOperationsInfoType
 * [ ] MetaGameUITacticalCommandSlots
 * [ ] MetaGameUICommonOpCommandSlots
-* [ ] MetaGameMapZoneData
-* [ ] MetaGameStaticData
+* [x] MetaGameMapZoneData
+* [x] MetaGameStaticData
 * [ ] ButtonSingleStateData
 * [ ] JoypadCommandBarTemplate
 * [ ] JoypadCommandBarButtonTemplate

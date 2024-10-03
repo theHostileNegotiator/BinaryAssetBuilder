@@ -142,6 +142,14 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+#if KANESWRATH
+            (typeof(StrikeForceBuildTemplate), 0x2C149A0Cu, false),
+            (typeof(MetagameOperationsInfoType), 0xEB284790u, false),
+
+            (typeof(MetaGameMapZoneData), 0xB45514A8u, false),
+            (typeof(MetaGameStaticData), 0xC350782Eu, false),
+#endif
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);
