@@ -148,7 +148,6 @@ public class Plugin : IAssetBuilderPlugin
 
             (typeof(W3DContainer), 0x909DD93Fu, false),
             (typeof(W3DHierarchy), 0x3BC26A7Au, false),
-
             (typeof(W3DCollisionBox), 0xC917E725u, false),
             (typeof(ArmyDefinition),
 #if TIBERIUMWARS
@@ -253,7 +252,41 @@ public class Plugin : IAssetBuilderPlugin
             0xF133BF97u,
 #endif
             false),
-
+            (typeof(AudioEvent),
+#if TIBERIUMWARS
+            0x1B886049u,
+#elif KANESWRATH
+            0xD3FED271u,
+#endif
+            false),
+            (typeof(MusicTrack),
+#if TIBERIUMWARS
+            0x1469548Au,
+#elif KANESWRATH
+            0xBCD0A189u,
+#endif
+            false),
+            (typeof(DialogEvent),
+#if TIBERIUMWARS
+            0x8655CDB4u,
+#elif KANESWRATH
+            0x666459DDu,
+#endif
+            false),
+            (typeof(AmbientStream),
+#if TIBERIUMWARS
+            0xDABB1C4Bu,
+#elif KANESWRATH
+            0x1FBA5E31u,
+#endif
+            false),
+            (typeof(Multisound),
+#if TIBERIUMWARS
+            0x12B1C67Cu,
+#elif KANESWRATH
+            0xA503DBF8u,
+#endif
+            false),
             (typeof(MusicPalette), 0x6A7AF822u, false),
             (typeof(MusicScriptConditionNugget_LocalPlayerIsObserver), 0xAFB6AF3Au, false),
             (typeof(MusicScriptConditionNugget_UnitsFarFromBase),
@@ -584,8 +617,12 @@ public class Plugin : IAssetBuilderPlugin
             false),
 #if TIBERIUMWARS
 
+            (typeof(MP3MusicTrack), 0x43A14C89u, false),
+            (typeof(MP3DialogEvent), 0xF582BDC2u, false),
+            (typeof(MP3AmbientStream), 0xF0F2CF86u, false),
             (typeof(UnitAbilityButtonTemplateStore), 0x5A48D289u, false),
             (typeof(PlayerPowerButtonTemplateStore), 0xDB57AB4Fu, false),
+
 #elif KANESWRATH
             (typeof(UnitAbilityButtonTemplate), 0x5E259F73u, false),
             (typeof(PlayerPowerButtonTemplate), 0x50FE2D98u, false),

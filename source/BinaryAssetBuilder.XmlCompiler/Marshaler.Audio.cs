@@ -108,17 +108,41 @@ public static partial class Marshaler
         Marshal(node, (BaseSingleSound*)objT, state);
     }
 
+#if TIBERIUMWARS
+    public static unsafe void Marshal(Node node, MP3MusicTrack* objT, Tracker state)
+    {
+        Marshal(node.GetChildNode(nameof(MP3MusicTrack.Filename), null), &objT->Filename, state);
+        Marshal(node, (BaseSingleSound*)objT, state);
+    }
+#endif
+
     public static unsafe void Marshal(Node node, DialogEvent* objT, Tracker state)
     {
         Marshal(node.GetChildNode(nameof(DialogEvent.Filename), null), &objT->Filename, state);
         Marshal(node, (BaseSingleSound*)objT, state);
     }
 
+#if TIBERIUMWARS
+    public static unsafe void Marshal(Node node, MP3DialogEvent* objT, Tracker state)
+    {
+        Marshal(node.GetChildNode(nameof(MP3DialogEvent.Filename), null), &objT->Filename, state);
+        Marshal(node, (BaseSingleSound*)objT, state);
+    }
+#endif
+
     public static unsafe void Marshal(Node node, AmbientStream* objT, Tracker state)
     {
         Marshal(node.GetChildNode(nameof(AmbientStream.Filename), null), &objT->Filename, state);
         Marshal(node, (BaseSingleSound*)objT, state);
     }
+
+#if TIBERIUMWARS
+    public static unsafe void Marshal(Node node, MP3AmbientStream* objT, Tracker state)
+    {
+        Marshal(node.GetChildNode(nameof(MP3AmbientStream.Filename), null), &objT->Filename, state);
+        Marshal(node, (BaseSingleSound*)objT, state);
+    }
+#endif
 
     public static unsafe void Marshal(Node node, Multisound* objT, Tracker state)
     {

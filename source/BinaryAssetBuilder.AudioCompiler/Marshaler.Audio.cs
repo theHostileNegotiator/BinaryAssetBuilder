@@ -29,6 +29,7 @@ public static partial class Marshaler
         Marshal(node, (BaseAssetType*)objT, state);
     }
 
+#if TIBERIUMWARS
     public static unsafe void Marshal(Node node, AudioFileMP3Passthrough* objT, Tracker state)
     {
         Marshal(node.GetAttributeValue(nameof(AudioFileMP3Passthrough.File), null), &objT->File, state);
@@ -36,4 +37,5 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(AudioFileMP3Passthrough.IsStreamed), "true"), &objT->IsStreamed, state);
         Marshal(node, (BaseAssetType*)objT, state);
     }
+#endif
 }

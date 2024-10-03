@@ -132,12 +132,14 @@ namespace BinaryAssetBuilder.AudioCompiler
                     result.ProcessingHash = VersionNumber ^ 0x83398E45u;
                     result.TypeHash = 0x46410F77u;
                     break;
+#if TIBERIUMWARS
                 case 0x15BDBF02u:
                     result.Type = typeof(AudioFileMP3Passthrough);
                     result.TypeName = nameof(AudioFileMP3Passthrough);
                     result.ProcessingHash = VersionNumber ^ 0x3520BB9Cu;
                     result.TypeHash = 0x610DB321u;
                     break;
+#endif
             }
             return result;
         }
@@ -155,6 +157,7 @@ namespace BinaryAssetBuilder.AudioCompiler
             Initialize(platform);
         }
 
+#if TIBERIUMWARS
         public unsafe AssetBuffer ProcessMP3PassthroughInstance(InstanceDeclaration instance)
         {
             AssetBuffer result = new AssetBuffer();
@@ -195,6 +198,7 @@ namespace BinaryAssetBuilder.AudioCompiler
             }
             return result;
         }
+#endif
 
         public unsafe AssetBuffer ProcessAudioFileInstance(InstanceDeclaration instance)
         {
@@ -480,9 +484,11 @@ namespace BinaryAssetBuilder.AudioCompiler
                 case 0x166B084Du:
                     result = ProcessAudioFileInstance(instance);
                     break;
+#if TIBERIUMWARS
                 case 0x15BDBF02u:
                     result = ProcessMP3PassthroughInstance(instance);
                     break;
+#endif
                 default:
                     throw new BinaryAssetBuilderException(ErrorCode.InternalError, "Couldn't process {0}. No matching handler found.", instance);
             }
