@@ -142,6 +142,47 @@ public class Plugin : IAssetBuilderPlugin
             0x6D59C409u,
 #endif
             false),
+
+            (typeof(AudioEvent),
+#if TIBERIUMWARS
+            0x1B886049u,
+#elif KANESWRATH
+            0xD3FED271u,
+#endif
+            false),
+            (typeof(MusicTrack),
+#if TIBERIUMWARS
+            0x1469548Au,
+#elif KANESWRATH
+            0xBCD0A189u,
+#endif
+            false),
+            (typeof(DialogEvent),
+#if TIBERIUMWARS
+            0x8655CDB4u,
+#elif KANESWRATH
+            0x666459DDu,
+#endif
+            false),
+            (typeof(AmbientStream),
+#if TIBERIUMWARS
+            0xDABB1C4Bu,
+#elif KANESWRATH
+            0x1FBA5E31u,
+#endif
+            false),
+            (typeof(Multisound),
+#if TIBERIUMWARS
+            0x12B1C67Cu,
+#elif KANESWRATH
+            0xA503DBF8u,
+#endif
+            false),
+#if TIBERIUMWARS
+            (typeof(MP3MusicTrack), 0x43A14C89u, false),
+            (typeof(MP3DialogEvent), 0xF582BDC2u, false),
+            (typeof(MP3AmbientStream), 0xF0F2CF86u, false),
+#endif
         })
         {
             CreateTypeInfo(type, num, hash, hasCustomData);

@@ -132,12 +132,14 @@ namespace BinaryAssetBuilder.AudioCompiler
                     result.ProcessingHash = VersionNumber ^ 0x83398E45u;
                     result.TypeHash = 0x46410F77u;
                     break;
+#if TIBERIUMWARS
                 case 0x15BDBF02u:
                     result.Type = typeof(AudioFileMP3Passthrough);
                     result.TypeName = nameof(AudioFileMP3Passthrough);
                     result.ProcessingHash = VersionNumber ^ 0x3520BB9Cu;
                     result.TypeHash = 0x610DB321u;
                     break;
+#endif
             }
             return result;
         }

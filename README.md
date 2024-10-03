@@ -39,11 +39,11 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] CampaignTemplate                                          0xAC60B530
 * [ ] RadiusCursorLibrary                                       0xD62B490F
 * [ ] AudioFile                                                 0x46410F77
-* [ ] AudioEvent                                                0x1B886049
-* [ ] MusicTrack                                                0x1469548A
-* [ ] DialogEvent                                               0x8655CDB4
-* [ ] AmbientStream                                             0xDABB1C4B
-* [ ] Multisound                                                0x12B1C67C
+* [x] AudioEvent
+* [x] MusicTrack
+* [x] DialogEvent
+* [x] AmbientStream
+* [x] Multisound
 * [ ] MusicPalette                                              0x6A7AF822
 * [ ] MusicScriptConditionNugget_LocalPlayerIsObserver          0xAFB6AF3A
 * [ ] MusicScriptConditionNugget_UnitsFarFromBase               0xD889BF98
@@ -122,9 +122,9 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 
 ### Tiberium Wars Only Types
 * [ ] AudioFileMP3Passthrough                                   0x610DB321
-* [ ] MP3MusicTrack
-* [ ] MP3DialogEvent
-* [ ] MP3AmbientStream
+* [x] MP3MusicTrack
+* [x] MP3DialogEvent
+* [x] MP3AmbientStream
 * [ ] UnitAbilityButtonTemplateStore                            0x5A48D289
 * [ ] PlayerPowerButtonTemplateStore                            0xDB57AB4F
 * [ ] CommandSet                                                0x3CFF78A1
