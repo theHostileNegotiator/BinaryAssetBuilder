@@ -626,12 +626,13 @@ public class Plugin : IAssetBuilderPlugin
 #elif KANESWRATH
             (typeof(UnitAbilityButtonTemplate), 0x5E259F73u, false),
             (typeof(PlayerPowerButtonTemplate), 0x50FE2D98u, false),
-
+            (typeof(StrikeForceBuildTemplate), 0x2C149A0Cu, false),
+            (typeof(MetagameOperationsInfoType), 0xEB284790u, false),
             (typeof(MetaGameUITacticalCommandSlots), 0x8679A22Fu, false),
             (typeof(MetaGameUICommonOpCommandSlots), 0xAB6D2D46u, false),
-
+            (typeof(MetaGameMapZoneData), 0xB45514A8u, false),
+            (typeof(MetaGameStaticData), 0xC350782Eu, false),
             (typeof(ButtonSingleStateData), 0x542774ABu, false),
-
 #endif
         })
         {
