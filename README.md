@@ -15,10 +15,10 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [ ] Texture
 * [ ] OnDemandTexture
 * [ ] W3DMesh                                                   0xC9D7E778
-* [ ] W3DContainer                                              0x909DD93F
-* [ ] W3DHierarchy                                              0x3BC26A7A
+* [x] W3DContainer
+* [x] W3DHierarchy
 * [ ] W3DAnimation                                              0xCC069193
-* [ ] W3DCollisionBox                                           0xC917E725
+* [x] W3DCollisionBox
 * [ ] ArmyDefinition                                            0x57213EA5
 * [ ] AIPersonalityDefinition                                   0x7DCE182F
 * [ ] FXList                                                    0xEBE8A8A4

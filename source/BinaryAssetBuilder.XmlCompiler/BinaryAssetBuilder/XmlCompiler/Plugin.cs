@@ -126,6 +126,9 @@ public class Plugin : IAssetBuilderPlugin
             false),
 
 
+            (typeof(W3DContainer), 0x909DD93Fu, false),
+            (typeof(W3DHierarchy), 0x3BC26A7Au, false),
+            (typeof(W3DCollisionBox), 0xC917E725u, false),
 
 
             (typeof(AttributeModifier),
