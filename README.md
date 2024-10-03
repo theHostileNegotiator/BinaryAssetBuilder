@@ -89,11 +89,11 @@ BinaryAssetBuilder implementation for Kane's Wrath in .Net
 * [x] Environment
 * [x] LogicCommand
 * [x] LogicCommandSet
-* [ ] MiscAudio                                                 0xFA4817E2
-* [ ] AudioSettings                                             0x89AA7DDE
-* [ ] CrowdResponse                                             0x66FB33A0
+* [x] MiscAudio
+* [x] AudioSettings
+* [x] CrowdResponse
 * [ ] MapMetaData                                               0x59013A51
-* [ ] LargeGroupAudioMap                                        0x9CBC0553
+* [x] LargeGroupAudioMap
 * [x] AptAptData
 * [x] AptConstData
 * [x] AptDatData

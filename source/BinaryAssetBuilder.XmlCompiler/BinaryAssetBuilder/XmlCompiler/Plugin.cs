@@ -469,7 +469,35 @@ public class Plugin : IAssetBuilderPlugin
 #endif
             false),
             (typeof(LogicCommandSet), 0x6D148BD7u, false),
+            (typeof(MiscAudio),
+#if TIBERIUMWARS
+            0xFA4817E2u,
+#elif KANESWRATH
+            0x92862F79u,
+#endif
+            false),
+            (typeof(AudioSettings),
+#if TIBERIUMWARS
+            0x89AA7DDEu,
+#elif KANESWRATH
+            0xD842549Du,
+#endif
+            false),
+            (typeof(CrowdResponse),
+#if TIBERIUMWARS
+            0x66FB33A0u,
+#elif KANESWRATH
+            0x0CF7A495u,
+#endif
+            false),
 
+            (typeof(LargeGroupAudioMap),
+#if TIBERIUMWARS
+            0x9CBC0553u,
+#elif KANESWRATH
+            0xCD55ECB7u,
+#endif
+            false),
             (typeof(AptAptData), 0x36866072u, false),
             (typeof(AptConstData), 0x1CE8E595u, false),
             (typeof(AptDatData), 0x3BF7FEB9u, false),
