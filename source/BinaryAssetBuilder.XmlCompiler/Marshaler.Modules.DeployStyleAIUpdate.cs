@@ -16,6 +16,9 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(DeployStyleAIUpdateModuleData.TurretsMustCenterBeforePacking), "false"), &objT->TurretsMustCenterBeforePacking, state);
         Marshal(node.GetAttributeValue(nameof(DeployStyleAIUpdateModuleData.MustDeployToAttack), "false"), &objT->MustDeployToAttack, state);
         Marshal(node.GetAttributeValue(nameof(DeployStyleAIUpdateModuleData.DeployedAttributeModifierName), null), &objT->DeployedAttributeModifierName, state);
+#if KANESWRATH
+        Marshal(node.GetAttributeValue(nameof(DeployStyleAIUpdateModuleData.CannotUndeploy), "false"), &objT->MustDeployToAttack, state);
+#endif
         Marshal(node, (AIUpdateModuleData*)objT, state);
     }
 }

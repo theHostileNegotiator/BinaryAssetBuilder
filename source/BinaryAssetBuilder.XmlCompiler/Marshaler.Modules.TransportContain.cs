@@ -84,7 +84,9 @@ public static partial class Marshaler
         Marshal(node.GetChildNode(nameof(TransportContainModuleData.ThrowOutPassengersVelocity), null), &objT->ThrowOutPassengersVelocity, state);
         Marshal(node.GetChildNodes(nameof(TransportContainModuleData.UpgradeCreationTrigger)), &objT->UpgradeCreationTrigger, state);
         Marshal(node.GetChildNode(nameof(TransportContainModuleData.FadeFilter), null), &objT->FadeFilter, state);
+#if KANESWRATH
         Marshal(node.GetChildNode(nameof(TransportContainModuleData.TransportContainUpgradeOverride), null), &objT->TransportContainUpgradeOverride, state);
+#endif
         Marshal(node, (OpenContainModuleData*)objT, state);
     }
 }

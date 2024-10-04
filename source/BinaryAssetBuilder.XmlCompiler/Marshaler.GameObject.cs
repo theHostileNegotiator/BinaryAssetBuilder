@@ -681,8 +681,8 @@ public static partial class Marshaler
             case 0xB2483B20u: // actually present in KW, enable?
                 MarshalPolymorphicType<TooltipUpgradeModuleData, BehaviorModuleData>(node, objT, state);
                 break;
-            case 0x36544EBAu: // actually present in KW, enable?
-                MarshalPolymorphicType<CreateCrateDie, BehaviorModuleData>(node, objT, state);
+            case 0x25E1EFA5u: // actually present in KW, enable?
+                MarshalPolymorphicType<CreateCrateDieModuleData, BehaviorModuleData>(node, objT, state);
                 break;
 #endif
             case 0x2827372Cu: // manually added in both
@@ -1094,6 +1094,10 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(GameObject.HasFiredRecentlyTime), "2s"), &objT->HasFiredRecentlyTime, state);
         Marshal(node.GetAttributeValue(nameof(GameObject.UnitTypeIcon), null), &objT->UnitTypeIcon, state);
         Marshal(node.GetAttributeValue(nameof(GameObject.ReinvisibilityDelay), "4s"), &objT->ReinvisibilityDelay, state);
+#if KANESWRATH
+        Marshal(node.GetAttributeValue(nameof(GameObject.WorldMapArmoryUpgradesAllowed), null), &objT->WorldMapArmoryUpgradesAllowed, state);
+        Marshal(node.GetAttributeValue(nameof(GameObject.CaptureTime), null), &objT->CaptureTime, state);
+#endif
         Marshal(node.GetChildNode(nameof(GameObject.DisplayName), null), &objT->DisplayName, state);
         Marshal(node.GetChildNode(nameof(GameObject.GameDependency), null), &objT->GameDependency, state);
         Marshal(node.GetChildNodes(nameof(GameObject.ArmorSet)), &objT->ArmorSet, state);
@@ -1120,7 +1124,9 @@ public static partial class Marshaler
         Marshal(node.GetChildNode(nameof(GameObject.InheritableModule), null), &objT->InheritableModule, state);
         Marshal(node.GetChildNode(nameof(GameObject.AutoResolveArmor), null), &objT->AutoResolveArmor, state);
         Marshal(node.GetChildNode(nameof(GameObject.AutoResolveWeapon), null), &objT->AutoResolveWeapon, state);
+#if TIBERIUMWARS
         Marshal(node.GetChildNode(nameof(GameObject.WorldMapArmoryUpgradesAllowed), null), &objT->WorldMapArmoryUpgradesAllowed, state);
+#endif
         Marshal(node.GetChildNode(nameof(GameObject.FormationPreviewDecal), null), &objT->FormationPreviewDecal, state);
         Marshal(node.GetChildNode(nameof(GameObject.FormationPreviewItemDecal), null), &objT->FormationPreviewItemDecal, state);
         Marshal(node.GetChildNode(nameof(GameObject.LiveCameraOffset), null), &objT->LiveCameraOffset, state);

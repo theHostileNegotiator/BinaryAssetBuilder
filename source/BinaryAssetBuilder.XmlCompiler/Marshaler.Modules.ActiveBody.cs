@@ -14,6 +14,19 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(DamageCreationList.DestroyedSide), null), &objT->DestroyedSide, state);
     }
 
+#if KANESWRATH
+    public static unsafe void Marshal(Node node, DamageTriggerType* objT, Tracker state)
+    {
+        if (node is null)
+        {
+            return;
+        }
+        Marshal(node.GetAttributeValue(nameof(DamageTriggerType.HealthLevelBelowPercent), "0"), &objT->HealthLevelBelowPercent, state);
+        Marshal(node.GetAttributeValue(nameof(DamageTriggerType.RemoveUpgrade), null), &objT->RemoveUpgrade, state);
+        Marshal(node.GetAttributeValue(nameof(DamageTriggerType.RemoveStatus), null), &objT->RemoveStatus, state);
+    }
+#endif
+
     public static unsafe void Marshal(Node node, ActiveBodyModuleData* objT, Tracker state)
     {
         if (node is null)
@@ -39,8 +52,15 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(ActiveBodyModuleData.RemoveUpgradesOnDeath), "false"), &objT->RemoveUpgradesOnDeath, state);
         Marshal(node.GetAttributeValue(nameof(ActiveBodyModuleData.BurningDeathBehavior), "false"), &objT->BurningDeathBehavior, state);
         Marshal(node.GetAttributeValue(nameof(ActiveBodyModuleData.BurningDeathFX), null), &objT->BurningDeathFX, state);
+#if KANESWRATH
+        Marshal(node.GetAttributeValue(nameof(ActiveBodyModuleData.SecondChanceUpgrade), null), &objT->SecondChanceUpgrade, state);
+        Marshal(node.GetAttributeValue(nameof(ActiveBodyModuleData.SecondChanceHeal), null), &objT->SecondChanceHeal, state);
+#endif
         Marshal(node.GetChildNode(nameof(ActiveBodyModuleData.GrabOffset), null), &objT->GrabOffset, state);
         Marshal(node.GetChildNodes(nameof(ActiveBodyModuleData.DamageCreation)), &objT->DamageCreation, state);
+#if KANESWRATH
+        Marshal(node.GetChildNodes(nameof(ActiveBodyModuleData.DamageTrigger)), &objT->DamageTrigger, state);
+#endif
         Marshal(node, (BodyModuleData*)objT, state);
     }
 }

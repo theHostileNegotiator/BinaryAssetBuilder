@@ -13,6 +13,23 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue("TypeId", "0"), &typeId, Tracker.NullTracker);
         switch (typeId)
         {
+#if KANESWRATH
+            case 0x78A29647u:
+                MarshalPolymorphicType<MetaICMUMOBodyModuleData, BodyModuleData>(node, objT, state);
+                break;
+            case 0xBAFB2887u:
+                MarshalPolymorphicType<MetaTiberiumBodyModuleData, BodyModuleData>(node, objT, state);
+                break;
+            case 0x19A2807Bu:
+                MarshalPolymorphicType<MetaSFBodyModuleData, BodyModuleData>(node, objT, state);
+                break;
+            case 0x33D5AD32u:
+                MarshalPolymorphicType<MetaCityBodyModuleData, BodyModuleData>(node, objT, state);
+                break;
+            case 0x1425AB30u:
+                MarshalPolymorphicType<MetaBaseBodyModuleData, BodyModuleData>(node, objT, state);
+                break;
+#endif
             case 0x6F0F9F52u:
                 MarshalPolymorphicType<HighlanderBodyModuleData, BodyModuleData>(node, objT, state);
                 break;
