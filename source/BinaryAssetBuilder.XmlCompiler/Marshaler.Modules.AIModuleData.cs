@@ -13,6 +13,11 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue("TypeId", "0"), &typeId, Tracker.NullTracker);
         switch (typeId)
         {
+#if KANESWRATH
+            case 0xF715F3A3u:
+                MarshalPolymorphicType<MetaGameAIUpdateModuleData, UpdateModuleData>(node, objT, state);
+                break;
+#endif
             case 0x8D093323u:
                 MarshalPolymorphicType<DozerAIUpdateModuleData, UpdateModuleData>(node, objT, state);
                 break;

@@ -1,10 +1,9 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct ImmortalBodyModuleData
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct ImmortalBodyModuleData
-    {
-        public ActiveBodyModuleData Base;
-    }
+    public ActiveBodyModuleData Base;
 }

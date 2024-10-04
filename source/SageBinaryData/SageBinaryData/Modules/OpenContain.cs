@@ -19,12 +19,14 @@ public struct MemberTemplateStatusData
     public ObjectStatusType ObjectStatus;
 }
 
+#if KANESWRATH
 [StructLayout(LayoutKind.Sequential)]
 public struct OpenContainUpgradeOverrideData
 {
     public TypedAssetId<UpgradeTemplate> UpgradeTriggeredBy;
     public ObjectStatusBitFlags ObjectStatusOfContained;
 }
+#endif
 
 [StructLayout(LayoutKind.Sequential)]
 public struct OpenContainModuleData

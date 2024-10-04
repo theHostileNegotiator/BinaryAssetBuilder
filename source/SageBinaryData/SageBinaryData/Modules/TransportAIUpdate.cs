@@ -1,10 +1,9 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct TransportAIUpdateModuleData
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct TransportAIUpdateModuleData
-    {
-        public AIUpdateModuleData Base;
-    }
+    public AIUpdateModuleData Base;
 }

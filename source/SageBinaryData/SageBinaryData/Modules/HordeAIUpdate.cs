@@ -1,10 +1,9 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct HordeAIUpdateModuleData
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct HordeAIUpdateModuleData
-    {
-        public AIUpdateModuleData Base;
-    }
+    public AIUpdateModuleData Base;
 }

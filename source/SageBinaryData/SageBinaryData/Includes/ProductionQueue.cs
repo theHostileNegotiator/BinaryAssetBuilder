@@ -1,27 +1,28 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+public enum ProductionQueueType
 {
-    public enum ProductionQueueType
-    {
-        INVALID = -1,
-        MAIN_STRUCTURE,
-        OTHER_STRUCTURE,
-        INFANTRY,
-        VEHICLE,
-        AIRCRAFT,
-        UPGRADE,
-        SPECIALPOWERS,
-        BOOKMARKS
-    }
+    INVALID = -1,
+    MAIN_STRUCTURE,
+    OTHER_STRUCTURE,
+    INFANTRY,
+    VEHICLE,
+    AIRCRAFT,
+    UPGRADE,
+#if TIBERIUMWARS
+    SPECIALPOWERS,
+    BOOKMARKS
+#endif
+}
 
-    [StructLayout(LayoutKind.Sequential)]
-    public struct ProductionQueueTypeBitFlags
-    {
-        public const int Count = 7;
-        public const int BitsInSpan = 32;
-        public const int NumSpans = (Count + (BitsInSpan - 1)) / BitsInSpan;
+[StructLayout(LayoutKind.Sequential)]
+public struct ProductionQueueTypeBitFlags
+{
+    public const int Count = 7;
+    public const int BitsInSpan = 32;
+    public const int NumSpans = (Count + (BitsInSpan - 1)) / BitsInSpan;
 
-        public unsafe fixed uint Value[NumSpans];
-    }
+    public unsafe fixed uint Value[NumSpans];
 }

@@ -39,6 +39,9 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(W3DStreamDrawModuleData.StreamStateID), "0"), &objT->StreamStateID, state);
         Marshal(node.GetChildNode(nameof(W3DStreamDrawModuleData.FXShader), null), &objT->FXShader, state);
         Marshal(node.GetChildNode(nameof(W3DStreamDrawModuleData.ParticleSystems), null), &objT->ParticleSystems, state);
+#if KANESWRATH
+        Marshal(node.GetChildNode(nameof(W3DStreamDrawModuleData.ObjectStatusValidation), null), &objT->ObjectStatusValidation, state);
+#endif
         Marshal(node, (DrawModuleData*)objT, state);
     }
 }

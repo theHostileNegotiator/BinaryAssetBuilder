@@ -1,12 +1,11 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct AIGateUpdateModuleData
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct AIGateUpdateModuleData
-    {
-        public UpdateModuleData Base;
-        public float TriggerWidthX;
-        public float TriggerWidthY;
-    }
+    public UpdateModuleData Base;
+    public float TriggerWidthX;
+    public float TriggerWidthY;
 }

@@ -1,12 +1,14 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct W3DSpotlightDrawModuleData
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct W3DSpotlightDrawModuleData
-    {
-        public W3DScriptedModelDrawModuleData Base;
-        public Time RefreshTime;
-        public Time SweepTime;
-    }
+    public W3DScriptedModelDrawModuleData Base;
+    public Time RefreshTime;
+    public Time SweepTime;
+#if KANESWRATH
+    public SageBool AlwaysOn;
+#endif
 }

@@ -1,13 +1,12 @@
 ﻿using Relo;
 using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct W3DPropDrawModuleData
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct W3DPropDrawModuleData
-    {
-        public DrawModuleData Base;
-        public AssetReference<W3DMesh> Model;
-        public SageBool DistanceFog;
-    }
+    public DrawModuleData Base;
+    public AssetReference<W3DMesh> Model;
+    public SageBool DistanceFog;
 }

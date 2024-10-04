@@ -1,12 +1,11 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct RespawnBodyModuleData
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct RespawnBodyModuleData
-    {
-        public ActiveBodyModuleData Base;
-        public unsafe ObjectFilter* PermanentlyKilledByFilter;
-        public SageBool UseRespawn;
-    }
+    public ActiveBodyModuleData Base;
+    public unsafe ObjectFilter* PermanentlyKilledByFilter;
+    public SageBool UseRespawn;
 }

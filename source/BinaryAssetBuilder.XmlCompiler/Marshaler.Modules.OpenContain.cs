@@ -24,6 +24,7 @@ public static partial class Marshaler
         Marshal(node.GetAttributeValue(nameof(MemberTemplateStatusData.ObjectStatus), null), &objT->ObjectStatus, state);
     }
 
+#if KANESWRATH
     public static unsafe void Marshal(Node node, OpenContainUpgradeOverrideData* objT, Tracker state)
     {
         if (node is null)
@@ -43,6 +44,7 @@ public static partial class Marshaler
         using Tracker.Context context = state.Push((void**)objT, (uint)sizeof(OpenContainUpgradeOverrideData), 1u);
         Marshal(node, *objT, state);
     }
+#endif
 
     public static unsafe void Marshal(Node node, OpenContainModuleData* objT, Tracker state)
     {

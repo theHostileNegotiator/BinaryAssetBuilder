@@ -1,14 +1,13 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace SageBinaryData
+namespace SageBinaryData;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct WanderAIUpdateModuleData
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct WanderAIUpdateModuleData
-    {
-        public AIUpdateModuleData Base;
-        public ModelConditionBitFlags EntryCondition;
-        public uint WanderDistance;
-        public SageBool AttackAll;
-        public SageBool Selectable;
-    }
+    public AIUpdateModuleData Base;
+    public ModelConditionBitFlags EntryCondition;
+    public uint WanderDistance;
+    public SageBool AttackAll;
+    public SageBool Selectable;
 }
