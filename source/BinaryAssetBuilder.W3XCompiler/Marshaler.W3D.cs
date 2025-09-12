@@ -221,7 +221,7 @@ public static partial class Marshaler
         {
             return;
         }
-        using Tracker.Context context = state.Push((void**)&objT, (uint)sizeof(AABTree.TreeNode.NodeChild), 1u);
+        using Tracker.Context context = state.Push((void**)objT, (uint)sizeof(AABTree.TreeNode.NodeChild), 1u);
         Marshal(node, *objT, state);
     }
 
@@ -241,7 +241,7 @@ public static partial class Marshaler
         {
             return;
         }
-        using Tracker.Context context = state.Push((void**)&objT, (uint)sizeof(AABTree.TreeNode.NodePoly), 1u);
+        using Tracker.Context context = state.Push((void**)objT, (uint)sizeof(AABTree.TreeNode.NodePoly), 1u);
         Marshal(node, *objT, state);
     }
 
@@ -273,8 +273,24 @@ public static partial class Marshaler
         {
             return;
         }
-        using Tracker.Context context = state.Push((void**)&objT, (uint)sizeof(AABTree), 1u);
+        using Tracker.Context context = state.Push((void**)objT, (uint)sizeof(AABTree), 1u);
         Marshal(node, *objT, state);
+    }
+
+    public static unsafe void Marshal(Node node, W3DMeshPipelineVertexData* objT, Tracker state)
+    {
+        if (node is null)
+        {
+            return;
+        }
+        Marshal(node.GetChildNodes(nameof(W3DMeshPipelineVertexData.Vertices)), &objT->Vertices, state);
+        Marshal(node.GetChildNodes(nameof(W3DMeshPipelineVertexData.Normals)), &objT->Normals, state);
+        Marshal(node.GetChildNode(nameof(W3DMeshPipelineVertexData.Tangents), null), &objT->Tangents, state);
+        Marshal(node.GetChildNode(nameof(W3DMeshPipelineVertexData.Binormals), null), &objT->Binormals, state);
+        Marshal(node.GetChildNode(nameof(W3DMeshPipelineVertexData.VertexColors), null), &objT->VertexColors, state);
+        Marshal(node.GetChildNodes(nameof(W3DMeshPipelineVertexData.TexCoords)), &objT->TexCoords, state);
+        Marshal(node.GetChildNodes(nameof(W3DMeshPipelineVertexData.BoneInfluences)), &objT->BoneInfluences, state);
+        Marshal(node.GetChildNode(nameof(W3DMeshPipelineVertexData.ShadeIndices), null), &objT->ShadeIndices, state);
     }
 
     public static unsafe void Marshal(Node node, W3DMeshPipelineVertexData.Vertex* objT, Tracker state)

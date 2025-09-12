@@ -465,7 +465,8 @@ internal class W3DMeshProcessor : IDisposable
             if (mapping.UsageType == UsageType.BlendWeight && mapping.UsageIndex >= 1)
             {
                 D3DVertexElement9 last = elements[^1];
-                last.Usage = (VertexElementUsage)((byte)last.Usage + 1);
+                last.Usage = (VertexElementUsage)((byte)last.Usage);
+                last.Type = (VertexElementType)((byte)last.Type + 1);
                 elements[^1] = last;
                 continue;
             }
@@ -493,7 +494,7 @@ internal class W3DMeshProcessor : IDisposable
                 UsageType.VertexColor => VertexElementType.D3DCOLOR,
                 UsageType.BlendIndex => VertexElementType.D3DCOLOR,
                 UsageType.BlendWeight => VertexElementType.FLOAT1,
-                _ => throw new ArgumentOutOfRangeException(nameof(vertexElement.Usage))
+                _ => throw new ArgumentOutOfRangeException(nameof(vertexElement.Type))
             };
             vertexElement.Offset = (short)mapping.Offset;
             elements.Add(vertexElement);
