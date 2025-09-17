@@ -73,7 +73,6 @@ public enum SpecialPowerRestrictionType
 #if KANESWRATH
 public enum MetagamePhaseEnum
 {
-    UNRESTRICTED,
     [Display(Name = "OPERATIONS")] METAGAME_PHASE_OPERATIONS,
     [Display(Name = "RESOLVE_POWERS")] METAGAME_PHASE_RESOLVE_POWERS,
     [Display(Name = "MOVEMENT")] METAGAME_PHASE_MOVEMENT,
