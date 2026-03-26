@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryAssetBuilder.XmlCompi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SageBinaryData", "SageBinaryData\SageBinaryData.csproj", "{2E5DADC8-AB63-4E14-9371-B64BD14C4B95}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryAssetBuilder.ExpressionEval", "BinaryAssetBuilder.ExpressionEval\BinaryAssetBuilder.ExpressionEval.csproj", "{D9DDB3E9-2DA7-5BDF-A4DD-BFA333C3C002}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -63,6 +65,10 @@ Global
 		{2E5DADC8-AB63-4E14-9371-B64BD14C4B95}.Debug|x86.Build.0 = Debug|x86
 		{2E5DADC8-AB63-4E14-9371-B64BD14C4B95}.Release|x86.ActiveCfg = Release|x86
 		{2E5DADC8-AB63-4E14-9371-B64BD14C4B95}.Release|x86.Build.0 = Release|x86
+		{D9DDB3E9-2DA7-5BDF-A4DD-BFA333C3C002}.Debug|x86.ActiveCfg = Debug|x86
+		{D9DDB3E9-2DA7-5BDF-A4DD-BFA333C3C002}.Debug|x86.Build.0 = Debug|x86
+		{D9DDB3E9-2DA7-5BDF-A4DD-BFA333C3C002}.Release|x86.ActiveCfg = Release|x86
+		{D9DDB3E9-2DA7-5BDF-A4DD-BFA333C3C002}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

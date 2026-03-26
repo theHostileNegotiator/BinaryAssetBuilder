@@ -1,13 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <Platforms>x86</Platforms>
     <RootNamespace></RootNamespace>
-    <StartupObject>BinaryAssetBuilder.Program</StartupObject>
-    <AnalysisMode>Recommended</AnalysisMode>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
@@ -24,13 +21,5 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BinaryAssetBuilder.Core\BinaryAssetBuilder.Core.csproj" />
-    <ProjectReference Include="..\BinaryAssetBuilder.ExpressionEval\BinaryAssetBuilder.ExpressionEval.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <None Update="BinaryAssetBuilder.cfg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
