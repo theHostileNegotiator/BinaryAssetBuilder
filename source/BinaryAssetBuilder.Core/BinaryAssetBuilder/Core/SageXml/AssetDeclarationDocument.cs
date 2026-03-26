@@ -11,6 +11,7 @@ using BinaryAssetBuilder.Core.Diagnostics;
 using BinaryAssetBuilder.Core.Hashing;
 using BinaryAssetBuilder.Core.IO;
 using BinaryAssetBuilder.Core.Xml;
+using BinaryAssetBuilder.Core.Xml.XInclude;
 using BinaryAssetBuilder.Utility;
 
 namespace BinaryAssetBuilder.Core.SageXml
@@ -1309,7 +1310,10 @@ namespace BinaryAssetBuilder.Core.SageXml
                 ? XmlReader.Create(_current.SourcePath)
                 : XmlReader.Create(new StringReader("<?xml version='1.0' encoding='UTF-8'?>\n<AssetDeclaration xmlns=\"uri:ea.com:eala:asset\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n</AssetDeclaration>"));
             _current.XmlDocument = new XmlDocument();
-            XmlReader reader = XIncludingReaderWrapper.GetReader(_current.XmlReader, xmlResolver) ?? _current.XmlReader;
+            XIncludingReader reader = new(_current.XmlReader)
+            {
+                XmlResolver = xmlResolver
+            };
             _current.NodeSourceInfoSet = new LinkedList<XmlNodeWithMetaData>();
             try
             {

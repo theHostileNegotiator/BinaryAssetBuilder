@@ -587,7 +587,6 @@ namespace BinaryAssetBuilder.Core.SageXml
 
         public void ProcessDocument(string fileName, bool generateOutput, bool outputStringHashes, out bool success)
         {
-            XIncludingReaderWrapper.LoadAssembly();
             ExpressionEvaluatorWrapper.LoadAssembly();
             DateTime startTime = DateTime.Now;
             using (new MetricTimer("BAB.ProcessingTime"))
